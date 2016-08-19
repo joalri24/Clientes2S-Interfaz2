@@ -155,8 +155,7 @@
             this.tableLayoutClientes.Location = new System.Drawing.Point(0, 25);
             this.tableLayoutClientes.Name = "tableLayoutClientes";
             this.tableLayoutClientes.RowCount = 1;
-            this.tableLayoutClientes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutClientes.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutClientes.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutClientes.Size = new System.Drawing.Size(961, 436);
             this.tableLayoutClientes.TabIndex = 1;
             // 
