@@ -43,8 +43,22 @@
             this.tabPageResumen = new System.Windows.Forms.TabPage();
             this.tabPageTareas = new System.Windows.Forms.TabPage();
             this.tabPageContactos = new System.Windows.Forms.TabPage();
+            this.splitContainerClienteFondo = new System.Windows.Forms.SplitContainer();
+            this.splitContainerSuperior = new System.Windows.Forms.SplitContainer();
+            this.groupBoxInfoGeneral = new System.Windows.Forms.GroupBox();
+            this.groupBoxContactoP = new System.Windows.Forms.GroupBox();
+            this.groupBoxOtros = new System.Windows.Forms.GroupBox();
             this.toolStripCliente.SuspendLayout();
             this.tabControlCliente.SuspendLayout();
+            this.tabPageResumen.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerClienteFondo)).BeginInit();
+            this.splitContainerClienteFondo.Panel1.SuspendLayout();
+            this.splitContainerClienteFondo.Panel2.SuspendLayout();
+            this.splitContainerClienteFondo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerSuperior)).BeginInit();
+            this.splitContainerSuperior.Panel1.SuspendLayout();
+            this.splitContainerSuperior.Panel2.SuspendLayout();
+            this.splitContainerSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripCliente
@@ -62,7 +76,7 @@
             this.toolStripButtonSalir});
             this.toolStripCliente.Location = new System.Drawing.Point(0, 0);
             this.toolStripCliente.Name = "toolStripCliente";
-            this.toolStripCliente.Size = new System.Drawing.Size(898, 25);
+            this.toolStripCliente.Size = new System.Drawing.Size(978, 25);
             this.toolStripCliente.TabIndex = 0;
             this.toolStripCliente.Text = "Empresa Pepito";
             // 
@@ -157,16 +171,17 @@
             this.tabControlCliente.Location = new System.Drawing.Point(0, 25);
             this.tabControlCliente.Name = "tabControlCliente";
             this.tabControlCliente.SelectedIndex = 0;
-            this.tabControlCliente.Size = new System.Drawing.Size(898, 270);
+            this.tabControlCliente.Size = new System.Drawing.Size(978, 330);
             this.tabControlCliente.TabIndex = 1;
             // 
             // tabPageResumen
             // 
             this.tabPageResumen.AutoScroll = true;
+            this.tabPageResumen.Controls.Add(this.splitContainerClienteFondo);
             this.tabPageResumen.Location = new System.Drawing.Point(4, 22);
             this.tabPageResumen.Name = "tabPageResumen";
             this.tabPageResumen.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageResumen.Size = new System.Drawing.Size(890, 244);
+            this.tabPageResumen.Size = new System.Drawing.Size(970, 304);
             this.tabPageResumen.TabIndex = 0;
             this.tabPageResumen.Text = "Resumen";
             this.tabPageResumen.UseVisualStyleBackColor = true;
@@ -191,6 +206,71 @@
             this.tabPageContactos.Text = "Contactos";
             this.tabPageContactos.UseVisualStyleBackColor = true;
             // 
+            // splitContainerClienteFondo
+            // 
+            this.splitContainerClienteFondo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerClienteFondo.Location = new System.Drawing.Point(3, 3);
+            this.splitContainerClienteFondo.Name = "splitContainerClienteFondo";
+            this.splitContainerClienteFondo.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainerClienteFondo.Panel1
+            // 
+            this.splitContainerClienteFondo.Panel1.Controls.Add(this.splitContainerSuperior);
+            // 
+            // splitContainerClienteFondo.Panel2
+            // 
+            this.splitContainerClienteFondo.Panel2.Controls.Add(this.groupBoxOtros);
+            this.splitContainerClienteFondo.Size = new System.Drawing.Size(964, 298);
+            this.splitContainerClienteFondo.SplitterDistance = 235;
+            this.splitContainerClienteFondo.TabIndex = 0;
+            // 
+            // splitContainerSuperior
+            // 
+            this.splitContainerSuperior.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerSuperior.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerSuperior.Name = "splitContainerSuperior";
+            // 
+            // splitContainerSuperior.Panel1
+            // 
+            this.splitContainerSuperior.Panel1.Controls.Add(this.groupBoxInfoGeneral);
+            // 
+            // splitContainerSuperior.Panel2
+            // 
+            this.splitContainerSuperior.Panel2.Controls.Add(this.groupBoxContactoP);
+            this.splitContainerSuperior.Size = new System.Drawing.Size(964, 235);
+            this.splitContainerSuperior.SplitterDistance = 412;
+            this.splitContainerSuperior.TabIndex = 0;
+            // 
+            // groupBoxInfoGeneral
+            // 
+            this.groupBoxInfoGeneral.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxInfoGeneral.Location = new System.Drawing.Point(0, 0);
+            this.groupBoxInfoGeneral.Name = "groupBoxInfoGeneral";
+            this.groupBoxInfoGeneral.Size = new System.Drawing.Size(412, 235);
+            this.groupBoxInfoGeneral.TabIndex = 0;
+            this.groupBoxInfoGeneral.TabStop = false;
+            this.groupBoxInfoGeneral.Text = "groupBox1";
+            // 
+            // groupBoxContactoP
+            // 
+            this.groupBoxContactoP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxContactoP.Location = new System.Drawing.Point(0, 0);
+            this.groupBoxContactoP.Name = "groupBoxContactoP";
+            this.groupBoxContactoP.Size = new System.Drawing.Size(548, 235);
+            this.groupBoxContactoP.TabIndex = 0;
+            this.groupBoxContactoP.TabStop = false;
+            this.groupBoxContactoP.Text = "groupBox2";
+            // 
+            // groupBoxOtros
+            // 
+            this.groupBoxOtros.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxOtros.Location = new System.Drawing.Point(0, 0);
+            this.groupBoxOtros.Name = "groupBoxOtros";
+            this.groupBoxOtros.Size = new System.Drawing.Size(964, 59);
+            this.groupBoxOtros.TabIndex = 0;
+            this.groupBoxOtros.TabStop = false;
+            this.groupBoxOtros.Text = "Otros";
+            // 
             // Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -198,10 +278,19 @@
             this.Controls.Add(this.tabControlCliente);
             this.Controls.Add(this.toolStripCliente);
             this.Name = "Cliente";
-            this.Size = new System.Drawing.Size(898, 295);
+            this.Size = new System.Drawing.Size(978, 355);
             this.toolStripCliente.ResumeLayout(false);
             this.toolStripCliente.PerformLayout();
             this.tabControlCliente.ResumeLayout(false);
+            this.tabPageResumen.ResumeLayout(false);
+            this.splitContainerClienteFondo.Panel1.ResumeLayout(false);
+            this.splitContainerClienteFondo.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerClienteFondo)).EndInit();
+            this.splitContainerClienteFondo.ResumeLayout(false);
+            this.splitContainerSuperior.Panel1.ResumeLayout(false);
+            this.splitContainerSuperior.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerSuperior)).EndInit();
+            this.splitContainerSuperior.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,5 +312,10 @@
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
         private System.Windows.Forms.ToolStripButton toolStripButtonSalir;
+        private System.Windows.Forms.SplitContainer splitContainerClienteFondo;
+        private System.Windows.Forms.SplitContainer splitContainerSuperior;
+        private System.Windows.Forms.GroupBox groupBoxInfoGeneral;
+        private System.Windows.Forms.GroupBox groupBoxContactoP;
+        private System.Windows.Forms.GroupBox groupBoxOtros;
     }
 }
