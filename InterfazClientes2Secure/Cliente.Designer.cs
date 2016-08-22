@@ -44,15 +44,17 @@
             this.splitContainerClienteFondo = new System.Windows.Forms.SplitContainer();
             this.splitContainerSuperior = new System.Windows.Forms.SplitContainer();
             this.groupBoxInfoGeneral = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labelComentarios = new System.Windows.Forms.Label();
+            this.labelSeguimiento = new System.Windows.Forms.Label();
+            this.labelTipoAsociacion = new System.Windows.Forms.Label();
+            this.textBoxNombreCliente = new System.Windows.Forms.TextBox();
             this.groupBoxContactoP = new System.Windows.Forms.GroupBox();
             this.groupBoxOtros = new System.Windows.Forms.GroupBox();
             this.tabPageTareas = new System.Windows.Forms.TabPage();
             this.tabPageContactos = new System.Windows.Forms.TabPage();
-            this.textBoxNombreCliente = new System.Windows.Forms.TextBox();
-            this.labelTipoAsociacion = new System.Windows.Forms.Label();
-            this.labelSeguimiento = new System.Windows.Forms.Label();
-            this.labelComentarios = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.comboBoxTipoAsociacion = new System.Windows.Forms.ComboBox();
             this.toolStripCliente.SuspendLayout();
             this.tabControlCliente.SuspendLayout();
             this.tabPageResumen.SuspendLayout();
@@ -207,7 +209,7 @@
             // 
             this.splitContainerClienteFondo.Panel2.Controls.Add(this.groupBoxOtros);
             this.splitContainerClienteFondo.Size = new System.Drawing.Size(964, 298);
-            this.splitContainerClienteFondo.SplitterDistance = 235;
+            this.splitContainerClienteFondo.SplitterDistance = 243;
             this.splitContainerClienteFondo.TabIndex = 0;
             // 
             // splitContainerSuperior
@@ -223,33 +225,88 @@
             // splitContainerSuperior.Panel2
             // 
             this.splitContainerSuperior.Panel2.Controls.Add(this.groupBoxContactoP);
-            this.splitContainerSuperior.Size = new System.Drawing.Size(964, 235);
+            this.splitContainerSuperior.Size = new System.Drawing.Size(964, 243);
             this.splitContainerSuperior.SplitterDistance = 412;
             this.splitContainerSuperior.TabIndex = 0;
             // 
             // groupBoxInfoGeneral
             // 
+            this.groupBoxInfoGeneral.Controls.Add(this.comboBoxTipoAsociacion);
+            this.groupBoxInfoGeneral.Controls.Add(this.checkBox1);
             this.groupBoxInfoGeneral.Controls.Add(this.textBox1);
             this.groupBoxInfoGeneral.Controls.Add(this.labelComentarios);
             this.groupBoxInfoGeneral.Controls.Add(this.labelSeguimiento);
             this.groupBoxInfoGeneral.Controls.Add(this.labelTipoAsociacion);
             this.groupBoxInfoGeneral.Controls.Add(this.textBoxNombreCliente);
             this.groupBoxInfoGeneral.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBoxInfoGeneral.ForeColor = System.Drawing.Color.Maroon;
+            this.groupBoxInfoGeneral.ForeColor = System.Drawing.Color.Brown;
             this.groupBoxInfoGeneral.Location = new System.Drawing.Point(0, 0);
             this.groupBoxInfoGeneral.Name = "groupBoxInfoGeneral";
-            this.groupBoxInfoGeneral.Size = new System.Drawing.Size(412, 235);
+            this.groupBoxInfoGeneral.Size = new System.Drawing.Size(412, 243);
             this.groupBoxInfoGeneral.TabIndex = 0;
             this.groupBoxInfoGeneral.TabStop = false;
             this.groupBoxInfoGeneral.Text = "Información general";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(6, 142);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox1.Size = new System.Drawing.Size(388, 95);
+            this.textBox1.TabIndex = 4;
+            // 
+            // labelComentarios
+            // 
+            this.labelComentarios.AutoSize = true;
+            this.labelComentarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelComentarios.ForeColor = System.Drawing.Color.Brown;
+            this.labelComentarios.Location = new System.Drawing.Point(6, 121);
+            this.labelComentarios.Name = "labelComentarios";
+            this.labelComentarios.Size = new System.Drawing.Size(98, 18);
+            this.labelComentarios.TabIndex = 3;
+            this.labelComentarios.Text = "Comentarios:";
+            // 
+            // labelSeguimiento
+            // 
+            this.labelSeguimiento.AutoSize = true;
+            this.labelSeguimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSeguimiento.ForeColor = System.Drawing.Color.Brown;
+            this.labelSeguimiento.Location = new System.Drawing.Point(6, 94);
+            this.labelSeguimiento.Name = "labelSeguimiento";
+            this.labelSeguimiento.Size = new System.Drawing.Size(94, 18);
+            this.labelSeguimiento.TabIndex = 2;
+            this.labelSeguimiento.Text = "Seguimiento:";
+            // 
+            // labelTipoAsociacion
+            // 
+            this.labelTipoAsociacion.AutoSize = true;
+            this.labelTipoAsociacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTipoAsociacion.ForeColor = System.Drawing.Color.Brown;
+            this.labelTipoAsociacion.Location = new System.Drawing.Point(6, 67);
+            this.labelTipoAsociacion.Name = "labelTipoAsociacion";
+            this.labelTipoAsociacion.Size = new System.Drawing.Size(118, 18);
+            this.labelTipoAsociacion.TabIndex = 1;
+            this.labelTipoAsociacion.Text = "Tipo Asociación:";
+            // 
+            // textBoxNombreCliente
+            // 
+            this.textBoxNombreCliente.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNombreCliente.ForeColor = System.Drawing.Color.Brown;
+            this.textBoxNombreCliente.Location = new System.Drawing.Point(9, 28);
+            this.textBoxNombreCliente.Name = "textBoxNombreCliente";
+            this.textBoxNombreCliente.Size = new System.Drawing.Size(385, 22);
+            this.textBoxNombreCliente.TabIndex = 0;
+            this.textBoxNombreCliente.Text = "Stable Tec";
+            // 
             // groupBoxContactoP
             // 
             this.groupBoxContactoP.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBoxContactoP.ForeColor = System.Drawing.Color.Maroon;
+            this.groupBoxContactoP.ForeColor = System.Drawing.Color.Brown;
             this.groupBoxContactoP.Location = new System.Drawing.Point(0, 0);
             this.groupBoxContactoP.Name = "groupBoxContactoP";
-            this.groupBoxContactoP.Size = new System.Drawing.Size(548, 235);
+            this.groupBoxContactoP.Size = new System.Drawing.Size(548, 243);
             this.groupBoxContactoP.TabIndex = 0;
             this.groupBoxContactoP.TabStop = false;
             this.groupBoxContactoP.Text = "Contacto principal";
@@ -257,9 +314,10 @@
             // groupBoxOtros
             // 
             this.groupBoxOtros.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxOtros.ForeColor = System.Drawing.Color.Brown;
             this.groupBoxOtros.Location = new System.Drawing.Point(0, 0);
             this.groupBoxOtros.Name = "groupBoxOtros";
-            this.groupBoxOtros.Size = new System.Drawing.Size(964, 59);
+            this.groupBoxOtros.Size = new System.Drawing.Size(964, 51);
             this.groupBoxOtros.TabIndex = 0;
             this.groupBoxOtros.TabStop = false;
             this.groupBoxOtros.Text = "Otros";
@@ -284,50 +342,30 @@
             this.tabPageContactos.Text = "Contactos";
             this.tabPageContactos.UseVisualStyleBackColor = true;
             // 
-            // textBoxNombreCliente
+            // checkBox1
             // 
-            this.textBoxNombreCliente.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxNombreCliente.Location = new System.Drawing.Point(9, 29);
-            this.textBoxNombreCliente.Name = "textBoxNombreCliente";
-            this.textBoxNombreCliente.Size = new System.Drawing.Size(400, 13);
-            this.textBoxNombreCliente.TabIndex = 0;
-            this.textBoxNombreCliente.Text = "Stable Tec";
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.checkBox1.Location = new System.Drawing.Point(146, 95);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(145, 21);
+            this.checkBox1.TabIndex = 5;
+            this.checkBox1.Text = "Hacer seguimiento";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // labelTipoAsociacion
+            // comboBoxTipoAsociacion
             // 
-            this.labelTipoAsociacion.AutoSize = true;
-            this.labelTipoAsociacion.Location = new System.Drawing.Point(6, 61);
-            this.labelTipoAsociacion.Name = "labelTipoAsociacion";
-            this.labelTipoAsociacion.Size = new System.Drawing.Size(86, 13);
-            this.labelTipoAsociacion.TabIndex = 1;
-            this.labelTipoAsociacion.Text = "Tipo Asociación:";
-            // 
-            // labelSeguimiento
-            // 
-            this.labelSeguimiento.AutoSize = true;
-            this.labelSeguimiento.Location = new System.Drawing.Point(6, 93);
-            this.labelSeguimiento.Name = "labelSeguimiento";
-            this.labelSeguimiento.Size = new System.Drawing.Size(68, 13);
-            this.labelSeguimiento.TabIndex = 2;
-            this.labelSeguimiento.Text = "Seguimiento:";
-            // 
-            // labelComentarios
-            // 
-            this.labelComentarios.AutoSize = true;
-            this.labelComentarios.Location = new System.Drawing.Point(6, 127);
-            this.labelComentarios.Name = "labelComentarios";
-            this.labelComentarios.Size = new System.Drawing.Size(68, 13);
-            this.labelComentarios.TabIndex = 3;
-            this.labelComentarios.Text = "Comentarios:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(9, 143);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(397, 86);
-            this.textBox1.TabIndex = 4;
+            this.comboBoxTipoAsociacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxTipoAsociacion.FormattingEnabled = true;
+            this.comboBoxTipoAsociacion.Items.AddRange(new object[] {
+            "Directo",
+            "Por Intermediario"});
+            this.comboBoxTipoAsociacion.Location = new System.Drawing.Point(146, 66);
+            this.comboBoxTipoAsociacion.Name = "comboBoxTipoAsociacion";
+            this.comboBoxTipoAsociacion.Size = new System.Drawing.Size(145, 24);
+            this.comboBoxTipoAsociacion.TabIndex = 6;
+            this.comboBoxTipoAsociacion.Text = "Directo";
             // 
             // Cliente
             // 
@@ -382,5 +420,7 @@
         private System.Windows.Forms.Label labelSeguimiento;
         private System.Windows.Forms.Label labelTipoAsociacion;
         private System.Windows.Forms.TextBox textBoxNombreCliente;
+        private System.Windows.Forms.ComboBox comboBoxTipoAsociacion;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
