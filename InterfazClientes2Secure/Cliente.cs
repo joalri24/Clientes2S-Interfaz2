@@ -63,6 +63,30 @@ namespace InterfazClientes2Secure
             }
         }
 
+        /// <summary>
+        /// Cambia el estilo del borde cuando se hace click en el textbox.
+        /// Activa un borde 3d.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TextBox_Enter(object sender, EventArgs e)
+        {
+            TextBox textbox = sender as TextBox;
+            textbox.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        /// <summary>
+        /// Cambia el estilo del borde cuando se le quita el foco al textbox.
+        /// Queda sin ningún borde.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TextBox_Leave(object sender, EventArgs e)
+        {
+            TextBox textbox = sender as TextBox;
+            textbox.BorderStyle = BorderStyle.None;
+        }
+
 
     }
 }

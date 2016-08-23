@@ -336,6 +336,8 @@
             this.textBoxNombreCliente.Size = new System.Drawing.Size(385, 22);
             this.textBoxNombreCliente.TabIndex = 0;
             this.textBoxNombreCliente.Text = "Stable Tec";
+            this.textBoxNombreCliente.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBoxNombreCliente.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // groupBoxContactoP
             // 
@@ -375,6 +377,8 @@
             this.textBoxCorreoCP.Size = new System.Drawing.Size(390, 17);
             this.textBoxCorreoCP.TabIndex = 8;
             this.textBoxCorreoCP.Text = "Pepito@stabletec.org";
+            this.textBoxCorreoCP.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBoxCorreoCP.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // textBoxTelCP
             // 
@@ -385,6 +389,8 @@
             this.textBoxTelCP.Size = new System.Drawing.Size(390, 17);
             this.textBoxTelCP.TabIndex = 7;
             this.textBoxTelCP.Text = "7777777-77";
+            this.textBoxTelCP.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBoxTelCP.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // textBoxCargoCP
             // 
@@ -395,6 +401,8 @@
             this.textBoxCargoCP.Size = new System.Drawing.Size(390, 17);
             this.textBoxCargoCP.TabIndex = 6;
             this.textBoxCargoCP.Text = "Líder Supremo";
+            this.textBoxCargoCP.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBoxCargoCP.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // textBoxNombreCP
             // 
@@ -405,6 +413,8 @@
             this.textBoxNombreCP.Size = new System.Drawing.Size(390, 17);
             this.textBoxNombreCP.TabIndex = 5;
             this.textBoxNombreCP.Text = "Pepito";
+            this.textBoxNombreCP.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBoxNombreCP.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // labelUltimoContacto
             // 
