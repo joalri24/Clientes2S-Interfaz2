@@ -44,7 +44,9 @@
             this.splitContainerClienteFondo = new System.Windows.Forms.SplitContainer();
             this.splitContainerSuperior = new System.Windows.Forms.SplitContainer();
             this.groupBoxInfoGeneral = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBoxTipoAsociacion = new System.Windows.Forms.ComboBox();
+            this.checkBoxSeguimiento = new System.Windows.Forms.CheckBox();
+            this.textBoxComentarios = new System.Windows.Forms.TextBox();
             this.labelComentarios = new System.Windows.Forms.Label();
             this.labelSeguimiento = new System.Windows.Forms.Label();
             this.labelTipoAsociacion = new System.Windows.Forms.Label();
@@ -53,8 +55,16 @@
             this.groupBoxOtros = new System.Windows.Forms.GroupBox();
             this.tabPageTareas = new System.Windows.Forms.TabPage();
             this.tabPageContactos = new System.Windows.Forms.TabPage();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.comboBoxTipoAsociacion = new System.Windows.Forms.ComboBox();
+            this.labelNombreCP = new System.Windows.Forms.Label();
+            this.labelCargoCP = new System.Windows.Forms.Label();
+            this.labelCorreoCP = new System.Windows.Forms.Label();
+            this.labelTelCP = new System.Windows.Forms.Label();
+            this.labelUltimoContacto = new System.Windows.Forms.Label();
+            this.textBoxNombreCP = new System.Windows.Forms.TextBox();
+            this.textBoxCargoCP = new System.Windows.Forms.TextBox();
+            this.textBoxTelCP = new System.Windows.Forms.TextBox();
+            this.textBoxCorreoCP = new System.Windows.Forms.TextBox();
+            this.dateTimePickerCP = new System.Windows.Forms.DateTimePicker();
             this.toolStripCliente.SuspendLayout();
             this.tabControlCliente.SuspendLayout();
             this.tabPageResumen.SuspendLayout();
@@ -67,6 +77,7 @@
             this.splitContainerSuperior.Panel2.SuspendLayout();
             this.splitContainerSuperior.SuspendLayout();
             this.groupBoxInfoGeneral.SuspendLayout();
+            this.groupBoxContactoP.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripCliente
@@ -103,7 +114,7 @@
             // 
             this.toolStripLabelCliente.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripLabelCliente.Name = "toolStripLabelCliente";
-            this.toolStripLabelCliente.Size = new System.Drawing.Size(64, 22);
+            this.toolStripLabelCliente.Size = new System.Drawing.Size(65, 22);
             this.toolStripLabelCliente.Text = "Stable Tec";
             // 
             // toolStripLabelEstado
@@ -232,8 +243,8 @@
             // groupBoxInfoGeneral
             // 
             this.groupBoxInfoGeneral.Controls.Add(this.comboBoxTipoAsociacion);
-            this.groupBoxInfoGeneral.Controls.Add(this.checkBox1);
-            this.groupBoxInfoGeneral.Controls.Add(this.textBox1);
+            this.groupBoxInfoGeneral.Controls.Add(this.checkBoxSeguimiento);
+            this.groupBoxInfoGeneral.Controls.Add(this.textBoxComentarios);
             this.groupBoxInfoGeneral.Controls.Add(this.labelComentarios);
             this.groupBoxInfoGeneral.Controls.Add(this.labelSeguimiento);
             this.groupBoxInfoGeneral.Controls.Add(this.labelTipoAsociacion);
@@ -247,14 +258,39 @@
             this.groupBoxInfoGeneral.TabStop = false;
             this.groupBoxInfoGeneral.Text = "Información general";
             // 
-            // textBox1
+            // comboBoxTipoAsociacion
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 142);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(388, 95);
-            this.textBox1.TabIndex = 4;
+            this.comboBoxTipoAsociacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxTipoAsociacion.FormattingEnabled = true;
+            this.comboBoxTipoAsociacion.Items.AddRange(new object[] {
+            "Directo",
+            "Por Intermediario"});
+            this.comboBoxTipoAsociacion.Location = new System.Drawing.Point(146, 66);
+            this.comboBoxTipoAsociacion.Name = "comboBoxTipoAsociacion";
+            this.comboBoxTipoAsociacion.Size = new System.Drawing.Size(145, 24);
+            this.comboBoxTipoAsociacion.TabIndex = 6;
+            this.comboBoxTipoAsociacion.Text = "Directo";
+            // 
+            // checkBoxSeguimiento
+            // 
+            this.checkBoxSeguimiento.AutoSize = true;
+            this.checkBoxSeguimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxSeguimiento.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.checkBoxSeguimiento.Location = new System.Drawing.Point(146, 95);
+            this.checkBoxSeguimiento.Name = "checkBoxSeguimiento";
+            this.checkBoxSeguimiento.Size = new System.Drawing.Size(145, 21);
+            this.checkBoxSeguimiento.TabIndex = 5;
+            this.checkBoxSeguimiento.Text = "Hacer seguimiento";
+            this.checkBoxSeguimiento.UseVisualStyleBackColor = true;
+            // 
+            // textBoxComentarios
+            // 
+            this.textBoxComentarios.Location = new System.Drawing.Point(6, 142);
+            this.textBoxComentarios.Multiline = true;
+            this.textBoxComentarios.Name = "textBoxComentarios";
+            this.textBoxComentarios.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxComentarios.Size = new System.Drawing.Size(388, 95);
+            this.textBoxComentarios.TabIndex = 4;
             // 
             // labelComentarios
             // 
@@ -302,6 +338,16 @@
             // 
             // groupBoxContactoP
             // 
+            this.groupBoxContactoP.Controls.Add(this.dateTimePickerCP);
+            this.groupBoxContactoP.Controls.Add(this.textBoxCorreoCP);
+            this.groupBoxContactoP.Controls.Add(this.textBoxTelCP);
+            this.groupBoxContactoP.Controls.Add(this.textBoxCargoCP);
+            this.groupBoxContactoP.Controls.Add(this.textBoxNombreCP);
+            this.groupBoxContactoP.Controls.Add(this.labelUltimoContacto);
+            this.groupBoxContactoP.Controls.Add(this.labelCorreoCP);
+            this.groupBoxContactoP.Controls.Add(this.labelTelCP);
+            this.groupBoxContactoP.Controls.Add(this.labelCargoCP);
+            this.groupBoxContactoP.Controls.Add(this.labelNombreCP);
             this.groupBoxContactoP.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBoxContactoP.ForeColor = System.Drawing.Color.Brown;
             this.groupBoxContactoP.Location = new System.Drawing.Point(0, 0);
@@ -342,30 +388,103 @@
             this.tabPageContactos.Text = "Contactos";
             this.tabPageContactos.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // labelNombreCP
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.checkBox1.Location = new System.Drawing.Point(146, 95);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(145, 21);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "Hacer seguimiento";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.labelNombreCP.AutoSize = true;
+            this.labelNombreCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNombreCP.Location = new System.Drawing.Point(7, 28);
+            this.labelNombreCP.Name = "labelNombreCP";
+            this.labelNombreCP.Size = new System.Drawing.Size(66, 18);
+            this.labelNombreCP.TabIndex = 0;
+            this.labelNombreCP.Text = "Nombre:";
             // 
-            // comboBoxTipoAsociacion
+            // labelCargoCP
             // 
-            this.comboBoxTipoAsociacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxTipoAsociacion.FormattingEnabled = true;
-            this.comboBoxTipoAsociacion.Items.AddRange(new object[] {
-            "Directo",
-            "Por Intermediario"});
-            this.comboBoxTipoAsociacion.Location = new System.Drawing.Point(146, 66);
-            this.comboBoxTipoAsociacion.Name = "comboBoxTipoAsociacion";
-            this.comboBoxTipoAsociacion.Size = new System.Drawing.Size(145, 24);
-            this.comboBoxTipoAsociacion.TabIndex = 6;
-            this.comboBoxTipoAsociacion.Text = "Directo";
+            this.labelCargoCP.AutoSize = true;
+            this.labelCargoCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCargoCP.Location = new System.Drawing.Point(7, 50);
+            this.labelCargoCP.Name = "labelCargoCP";
+            this.labelCargoCP.Size = new System.Drawing.Size(53, 18);
+            this.labelCargoCP.TabIndex = 1;
+            this.labelCargoCP.Text = "Cargo:";
+            // 
+            // labelCorreoCP
+            // 
+            this.labelCorreoCP.AutoSize = true;
+            this.labelCorreoCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCorreoCP.Location = new System.Drawing.Point(7, 94);
+            this.labelCorreoCP.Name = "labelCorreoCP";
+            this.labelCorreoCP.Size = new System.Drawing.Size(63, 18);
+            this.labelCorreoCP.TabIndex = 3;
+            this.labelCorreoCP.Text = "Correo: ";
+            // 
+            // labelTelCP
+            // 
+            this.labelTelCP.AutoSize = true;
+            this.labelTelCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTelCP.Location = new System.Drawing.Point(7, 72);
+            this.labelTelCP.Name = "labelTelCP";
+            this.labelTelCP.Size = new System.Drawing.Size(70, 18);
+            this.labelTelCP.TabIndex = 2;
+            this.labelTelCP.Text = "Teléfono:";
+            // 
+            // labelUltimoContacto
+            // 
+            this.labelUltimoContacto.AutoSize = true;
+            this.labelUltimoContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUltimoContacto.Location = new System.Drawing.Point(7, 165);
+            this.labelUltimoContacto.Name = "labelUltimoContacto";
+            this.labelUltimoContacto.Size = new System.Drawing.Size(121, 18);
+            this.labelUltimoContacto.TabIndex = 4;
+            this.labelUltimoContacto.Text = "Último contacto: ";
+            // 
+            // textBoxNombreCP
+            // 
+            this.textBoxNombreCP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxNombreCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNombreCP.Location = new System.Drawing.Point(137, 28);
+            this.textBoxNombreCP.Name = "textBoxNombreCP";
+            this.textBoxNombreCP.Size = new System.Drawing.Size(390, 17);
+            this.textBoxNombreCP.TabIndex = 5;
+            this.textBoxNombreCP.Text = "Pepito";
+            // 
+            // textBoxCargoCP
+            // 
+            this.textBoxCargoCP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxCargoCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCargoCP.Location = new System.Drawing.Point(137, 51);
+            this.textBoxCargoCP.Name = "textBoxCargoCP";
+            this.textBoxCargoCP.Size = new System.Drawing.Size(390, 17);
+            this.textBoxCargoCP.TabIndex = 6;
+            this.textBoxCargoCP.Text = "Líder Supremo";
+            // 
+            // textBoxTelCP
+            // 
+            this.textBoxTelCP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxTelCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTelCP.Location = new System.Drawing.Point(137, 72);
+            this.textBoxTelCP.Name = "textBoxTelCP";
+            this.textBoxTelCP.Size = new System.Drawing.Size(390, 17);
+            this.textBoxTelCP.TabIndex = 7;
+            this.textBoxTelCP.Text = "7777777-77";
+            // 
+            // textBoxCorreoCP
+            // 
+            this.textBoxCorreoCP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxCorreoCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCorreoCP.Location = new System.Drawing.Point(137, 94);
+            this.textBoxCorreoCP.Name = "textBoxCorreoCP";
+            this.textBoxCorreoCP.Size = new System.Drawing.Size(390, 17);
+            this.textBoxCorreoCP.TabIndex = 8;
+            this.textBoxCorreoCP.Text = "Pepito@stabletec.org";
+            // 
+            // dateTimePickerCP
+            // 
+            this.dateTimePickerCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerCP.Location = new System.Drawing.Point(137, 163);
+            this.dateTimePickerCP.Name = "dateTimePickerCP";
+            this.dateTimePickerCP.Size = new System.Drawing.Size(250, 21);
+            this.dateTimePickerCP.TabIndex = 9;
             // 
             // Cliente
             // 
@@ -389,6 +508,8 @@
             this.splitContainerSuperior.ResumeLayout(false);
             this.groupBoxInfoGeneral.ResumeLayout(false);
             this.groupBoxInfoGeneral.PerformLayout();
+            this.groupBoxContactoP.ResumeLayout(false);
+            this.groupBoxContactoP.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -415,12 +536,22 @@
         private System.Windows.Forms.GroupBox groupBoxInfoGeneral;
         private System.Windows.Forms.GroupBox groupBoxContactoP;
         private System.Windows.Forms.GroupBox groupBoxOtros;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxComentarios;
         private System.Windows.Forms.Label labelComentarios;
         private System.Windows.Forms.Label labelSeguimiento;
         private System.Windows.Forms.Label labelTipoAsociacion;
         private System.Windows.Forms.TextBox textBoxNombreCliente;
         private System.Windows.Forms.ComboBox comboBoxTipoAsociacion;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBoxSeguimiento;
+        private System.Windows.Forms.Label labelUltimoContacto;
+        private System.Windows.Forms.Label labelCorreoCP;
+        private System.Windows.Forms.Label labelTelCP;
+        private System.Windows.Forms.Label labelCargoCP;
+        private System.Windows.Forms.Label labelNombreCP;
+        private System.Windows.Forms.TextBox textBoxNombreCP;
+        private System.Windows.Forms.DateTimePicker dateTimePickerCP;
+        private System.Windows.Forms.TextBox textBoxCorreoCP;
+        private System.Windows.Forms.TextBox textBoxTelCP;
+        private System.Windows.Forms.TextBox textBoxCargoCP;
     }
 }
