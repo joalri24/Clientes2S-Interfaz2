@@ -73,6 +73,7 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButtonMinimizarTodos = new System.Windows.Forms.ToolStripButton();
             this.tabPageContactos = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanelContactos = new System.Windows.Forms.TableLayoutPanel();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonNuevoContacto = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
@@ -80,7 +81,6 @@
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.tableLayoutPanelContactos = new System.Windows.Forms.TableLayoutPanel();
             this.toolStripCliente.SuspendLayout();
             this.tabControlCliente.SuspendLayout();
             this.tabPageResumen.SuspendLayout();
@@ -215,7 +215,7 @@
             this.tabControlCliente.Location = new System.Drawing.Point(0, 25);
             this.tabControlCliente.Name = "tabControlCliente";
             this.tabControlCliente.SelectedIndex = 0;
-            this.tabControlCliente.Size = new System.Drawing.Size(978, 330);
+            this.tabControlCliente.Size = new System.Drawing.Size(978, 397);
             this.tabControlCliente.TabIndex = 1;
             // 
             // tabPageResumen
@@ -225,7 +225,7 @@
             this.tabPageResumen.Location = new System.Drawing.Point(4, 22);
             this.tabPageResumen.Name = "tabPageResumen";
             this.tabPageResumen.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageResumen.Size = new System.Drawing.Size(970, 304);
+            this.tabPageResumen.Size = new System.Drawing.Size(970, 371);
             this.tabPageResumen.TabIndex = 0;
             this.tabPageResumen.Text = "Resumen";
             this.tabPageResumen.UseVisualStyleBackColor = true;
@@ -244,8 +244,8 @@
             // splitContainerClienteFondo.Panel2
             // 
             this.splitContainerClienteFondo.Panel2.Controls.Add(this.groupBoxOtros);
-            this.splitContainerClienteFondo.Size = new System.Drawing.Size(964, 298);
-            this.splitContainerClienteFondo.SplitterDistance = 243;
+            this.splitContainerClienteFondo.Size = new System.Drawing.Size(964, 365);
+            this.splitContainerClienteFondo.SplitterDistance = 257;
             this.splitContainerClienteFondo.TabIndex = 0;
             // 
             // splitContainerSuperior
@@ -261,7 +261,7 @@
             // splitContainerSuperior.Panel2
             // 
             this.splitContainerSuperior.Panel2.Controls.Add(this.groupBoxContactoP);
-            this.splitContainerSuperior.Size = new System.Drawing.Size(964, 243);
+            this.splitContainerSuperior.Size = new System.Drawing.Size(964, 257);
             this.splitContainerSuperior.SplitterDistance = 412;
             this.splitContainerSuperior.TabIndex = 0;
             // 
@@ -278,7 +278,7 @@
             this.groupBoxInfoGeneral.ForeColor = System.Drawing.Color.Brown;
             this.groupBoxInfoGeneral.Location = new System.Drawing.Point(0, 0);
             this.groupBoxInfoGeneral.Name = "groupBoxInfoGeneral";
-            this.groupBoxInfoGeneral.Size = new System.Drawing.Size(412, 243);
+            this.groupBoxInfoGeneral.Size = new System.Drawing.Size(412, 257);
             this.groupBoxInfoGeneral.TabIndex = 0;
             this.groupBoxInfoGeneral.TabStop = false;
             this.groupBoxInfoGeneral.Text = "Información general";
@@ -380,7 +380,7 @@
             this.groupBoxContactoP.ForeColor = System.Drawing.Color.Brown;
             this.groupBoxContactoP.Location = new System.Drawing.Point(0, 0);
             this.groupBoxContactoP.Name = "groupBoxContactoP";
-            this.groupBoxContactoP.Size = new System.Drawing.Size(548, 243);
+            this.groupBoxContactoP.Size = new System.Drawing.Size(548, 257);
             this.groupBoxContactoP.TabIndex = 0;
             this.groupBoxContactoP.TabStop = false;
             this.groupBoxContactoP.Text = "Contacto principal";
@@ -497,7 +497,7 @@
             this.groupBoxOtros.ForeColor = System.Drawing.Color.Brown;
             this.groupBoxOtros.Location = new System.Drawing.Point(0, 0);
             this.groupBoxOtros.Name = "groupBoxOtros";
-            this.groupBoxOtros.Size = new System.Drawing.Size(964, 51);
+            this.groupBoxOtros.Size = new System.Drawing.Size(964, 104);
             this.groupBoxOtros.TabIndex = 0;
             this.groupBoxOtros.TabStop = false;
             this.groupBoxOtros.Text = "Otros";
@@ -605,6 +605,20 @@
             this.tabPageContactos.Text = "Contactos";
             this.tabPageContactos.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanelContactos
+            // 
+            this.tableLayoutPanelContactos.ColumnCount = 2;
+            this.tableLayoutPanelContactos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelContactos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelContactos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanelContactos.Location = new System.Drawing.Point(27, 3);
+            this.tableLayoutPanelContactos.Name = "tableLayoutPanelContactos";
+            this.tableLayoutPanelContactos.RowCount = 2;
+            this.tableLayoutPanelContactos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelContactos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelContactos.Size = new System.Drawing.Size(940, 298);
+            this.tableLayoutPanelContactos.TabIndex = 2;
+            // 
             // toolStrip2
             // 
             this.toolStrip2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -669,20 +683,6 @@
             this.toolStripButton4.Size = new System.Drawing.Size(21, 20);
             this.toolStripButton4.Text = "toolStripButton4";
             // 
-            // tableLayoutPanelContactos
-            // 
-            this.tableLayoutPanelContactos.ColumnCount = 2;
-            this.tableLayoutPanelContactos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelContactos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelContactos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelContactos.Location = new System.Drawing.Point(27, 3);
-            this.tableLayoutPanelContactos.Name = "tableLayoutPanelContactos";
-            this.tableLayoutPanelContactos.RowCount = 2;
-            this.tableLayoutPanelContactos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelContactos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelContactos.Size = new System.Drawing.Size(940, 298);
-            this.tableLayoutPanelContactos.TabIndex = 2;
-            // 
             // Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -690,7 +690,7 @@
             this.Controls.Add(this.tabControlCliente);
             this.Controls.Add(this.toolStripCliente);
             this.Name = "Cliente";
-            this.Size = new System.Drawing.Size(978, 355);
+            this.Size = new System.Drawing.Size(978, 422);
             this.toolStripCliente.ResumeLayout(false);
             this.toolStripCliente.PerformLayout();
             this.tabControlCliente.ResumeLayout(false);

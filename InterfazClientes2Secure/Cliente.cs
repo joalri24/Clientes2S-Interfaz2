@@ -13,9 +13,9 @@ namespace InterfazClientes2Secure
     public partial class Cliente : UserControl
     {
 
-        // ------------------------------------------------
+        // ------------------------------------------------------------------
         // Constantes
-        // ------------------------------------------------
+        // ------------------------------------------------------------------
 
         // Tamaños para maximizar y minimizar
         private const int ALTURA_ORIGINAL = 355;
@@ -26,13 +26,17 @@ namespace InterfazClientes2Secure
         private const string ATENCION = "Atención";
         private const string NORMAL = "Normal";
 
-        // ------------------------------------------------
+
+        // ------------------------------------------------------------------
         // Atributos
-        // ------------------------------------------------
+        // ------------------------------------------------------------------
+
         private bool hayTareas;
-        // ------------------------------------------------
+
+
+        // ------------------------------------------------------------------
         // Constructor
-        // ------------------------------------------------
+        // ------------------------------------------------------------------
 
 
         public Cliente()
@@ -42,9 +46,9 @@ namespace InterfazClientes2Secure
         }
 
 
-        // ------------------------------------------------
+        // ------------------------------------------------------------------
         // Métodos
-        // ------------------------------------------------
+        // ------------------------------------------------------------------
 
         /// <summary>
         /// Minimiza el control cuando se hace click en el boton correspondiente.
@@ -162,10 +166,9 @@ namespace InterfazClientes2Secure
             else
                 tablaFondo.RowCount++;
 
-            //tablaFondo.Controls.Add(new Cliente(), 0, tablaFondo.RowCount - 1);
-            tablaFondo.Controls.Add(new Label() { Text ="Tarea"}, 0, tablaFondo.RowCount - 1);
+            tablaFondo.Controls.Add(new TareaControl(), 0, tablaFondo.RowCount - 1);
+            //tablaFondo.Controls.Add(new Label() { Text ="Tarea"}, 0, tablaFondo.RowCount - 1);
             Console.WriteLine("Rows: " + tablaFondo.RowCount);
-        }
-        
+        }       
     }
 }
