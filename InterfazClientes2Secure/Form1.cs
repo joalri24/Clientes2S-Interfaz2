@@ -22,10 +22,10 @@ namespace InterfazClientes2Secure
         // ------------------------------------------------
 
         private bool vacio;
+
         // ------------------------------------------------
         // Constructor
         // ------------------------------------------------
-
         public Form1()
         {
             InitializeComponent();
@@ -37,6 +37,8 @@ namespace InterfazClientes2Secure
         // ------------------------------------------------
         // Métodos
         // ------------------------------------------------
+
+
 
         /// <summary>
         /// TODO Borrar. Atajo para crear nuevos clientes.
@@ -50,7 +52,7 @@ namespace InterfazClientes2Secure
                 tablaFondo.RowCount++;
 
             tablaFondo.Controls.Add(new Cliente(), 0, tablaFondo.RowCount - 1);
-            Console.WriteLine("Rows: " + tablaFondo.RowCount);
+            //Console.WriteLine("Rows: " + tablaFondo.RowCount);
         }
     }
 }

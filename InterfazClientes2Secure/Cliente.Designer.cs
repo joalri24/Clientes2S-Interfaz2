@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cliente));
             this.toolStripCliente = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonMinimizar = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabelCliente = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabelEstado = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -52,19 +52,19 @@
             this.labelTipoAsociacion = new System.Windows.Forms.Label();
             this.textBoxNombreCliente = new System.Windows.Forms.TextBox();
             this.groupBoxContactoP = new System.Windows.Forms.GroupBox();
+            this.dateTimePickerCP = new System.Windows.Forms.DateTimePicker();
+            this.textBoxCorreoCP = new System.Windows.Forms.TextBox();
+            this.textBoxTelCP = new System.Windows.Forms.TextBox();
+            this.textBoxCargoCP = new System.Windows.Forms.TextBox();
+            this.textBoxNombreCP = new System.Windows.Forms.TextBox();
+            this.labelUltimoContacto = new System.Windows.Forms.Label();
+            this.labelCorreoCP = new System.Windows.Forms.Label();
+            this.labelTelCP = new System.Windows.Forms.Label();
+            this.labelCargoCP = new System.Windows.Forms.Label();
+            this.labelNombreCP = new System.Windows.Forms.Label();
             this.groupBoxOtros = new System.Windows.Forms.GroupBox();
             this.tabPageTareas = new System.Windows.Forms.TabPage();
             this.tabPageContactos = new System.Windows.Forms.TabPage();
-            this.labelNombreCP = new System.Windows.Forms.Label();
-            this.labelCargoCP = new System.Windows.Forms.Label();
-            this.labelCorreoCP = new System.Windows.Forms.Label();
-            this.labelTelCP = new System.Windows.Forms.Label();
-            this.labelUltimoContacto = new System.Windows.Forms.Label();
-            this.textBoxNombreCP = new System.Windows.Forms.TextBox();
-            this.textBoxCargoCP = new System.Windows.Forms.TextBox();
-            this.textBoxTelCP = new System.Windows.Forms.TextBox();
-            this.textBoxCorreoCP = new System.Windows.Forms.TextBox();
-            this.dateTimePickerCP = new System.Windows.Forms.DateTimePicker();
             this.toolStripCliente.SuspendLayout();
             this.tabControlCliente.SuspendLayout();
             this.tabPageResumen.SuspendLayout();
@@ -84,7 +84,7 @@
             // 
             this.toolStripCliente.BackColor = System.Drawing.Color.Gainsboro;
             this.toolStripCliente.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
+            this.toolStripButtonMinimizar,
             this.toolStripLabelCliente,
             this.toolStripLabelEstado,
             this.toolStripSeparator1,
@@ -99,16 +99,17 @@
             this.toolStripCliente.TabIndex = 0;
             this.toolStripCliente.Text = "Empresa Pepito";
             // 
-            // toolStripButton1
+            // toolStripButtonMinimizar
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(24, 22);
-            this.toolStripButton1.Text = "[-]";
-            this.toolStripButton1.ToolTipText = "Minimizar";
+            this.toolStripButtonMinimizar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonMinimizar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripButtonMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonMinimizar.Image")));
+            this.toolStripButtonMinimizar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonMinimizar.Name = "toolStripButtonMinimizar";
+            this.toolStripButtonMinimizar.Size = new System.Drawing.Size(24, 22);
+            this.toolStripButtonMinimizar.Text = "[-]";
+            this.toolStripButtonMinimizar.ToolTipText = "Minimizar";
+            this.toolStripButtonMinimizar.Click += new System.EventHandler(this.Minimizar);
             // 
             // toolStripLabelCliente
             // 
@@ -357,6 +358,104 @@
             this.groupBoxContactoP.TabStop = false;
             this.groupBoxContactoP.Text = "Contacto principal";
             // 
+            // dateTimePickerCP
+            // 
+            this.dateTimePickerCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerCP.Location = new System.Drawing.Point(137, 163);
+            this.dateTimePickerCP.Name = "dateTimePickerCP";
+            this.dateTimePickerCP.Size = new System.Drawing.Size(250, 21);
+            this.dateTimePickerCP.TabIndex = 9;
+            // 
+            // textBoxCorreoCP
+            // 
+            this.textBoxCorreoCP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxCorreoCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCorreoCP.Location = new System.Drawing.Point(137, 94);
+            this.textBoxCorreoCP.Name = "textBoxCorreoCP";
+            this.textBoxCorreoCP.Size = new System.Drawing.Size(390, 17);
+            this.textBoxCorreoCP.TabIndex = 8;
+            this.textBoxCorreoCP.Text = "Pepito@stabletec.org";
+            // 
+            // textBoxTelCP
+            // 
+            this.textBoxTelCP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxTelCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTelCP.Location = new System.Drawing.Point(137, 72);
+            this.textBoxTelCP.Name = "textBoxTelCP";
+            this.textBoxTelCP.Size = new System.Drawing.Size(390, 17);
+            this.textBoxTelCP.TabIndex = 7;
+            this.textBoxTelCP.Text = "7777777-77";
+            // 
+            // textBoxCargoCP
+            // 
+            this.textBoxCargoCP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxCargoCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCargoCP.Location = new System.Drawing.Point(137, 51);
+            this.textBoxCargoCP.Name = "textBoxCargoCP";
+            this.textBoxCargoCP.Size = new System.Drawing.Size(390, 17);
+            this.textBoxCargoCP.TabIndex = 6;
+            this.textBoxCargoCP.Text = "Líder Supremo";
+            // 
+            // textBoxNombreCP
+            // 
+            this.textBoxNombreCP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxNombreCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNombreCP.Location = new System.Drawing.Point(137, 28);
+            this.textBoxNombreCP.Name = "textBoxNombreCP";
+            this.textBoxNombreCP.Size = new System.Drawing.Size(390, 17);
+            this.textBoxNombreCP.TabIndex = 5;
+            this.textBoxNombreCP.Text = "Pepito";
+            // 
+            // labelUltimoContacto
+            // 
+            this.labelUltimoContacto.AutoSize = true;
+            this.labelUltimoContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUltimoContacto.Location = new System.Drawing.Point(7, 165);
+            this.labelUltimoContacto.Name = "labelUltimoContacto";
+            this.labelUltimoContacto.Size = new System.Drawing.Size(121, 18);
+            this.labelUltimoContacto.TabIndex = 4;
+            this.labelUltimoContacto.Text = "Último contacto: ";
+            // 
+            // labelCorreoCP
+            // 
+            this.labelCorreoCP.AutoSize = true;
+            this.labelCorreoCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCorreoCP.Location = new System.Drawing.Point(7, 94);
+            this.labelCorreoCP.Name = "labelCorreoCP";
+            this.labelCorreoCP.Size = new System.Drawing.Size(63, 18);
+            this.labelCorreoCP.TabIndex = 3;
+            this.labelCorreoCP.Text = "Correo: ";
+            // 
+            // labelTelCP
+            // 
+            this.labelTelCP.AutoSize = true;
+            this.labelTelCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTelCP.Location = new System.Drawing.Point(7, 72);
+            this.labelTelCP.Name = "labelTelCP";
+            this.labelTelCP.Size = new System.Drawing.Size(70, 18);
+            this.labelTelCP.TabIndex = 2;
+            this.labelTelCP.Text = "Teléfono:";
+            // 
+            // labelCargoCP
+            // 
+            this.labelCargoCP.AutoSize = true;
+            this.labelCargoCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCargoCP.Location = new System.Drawing.Point(7, 50);
+            this.labelCargoCP.Name = "labelCargoCP";
+            this.labelCargoCP.Size = new System.Drawing.Size(53, 18);
+            this.labelCargoCP.TabIndex = 1;
+            this.labelCargoCP.Text = "Cargo:";
+            // 
+            // labelNombreCP
+            // 
+            this.labelNombreCP.AutoSize = true;
+            this.labelNombreCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNombreCP.Location = new System.Drawing.Point(7, 28);
+            this.labelNombreCP.Name = "labelNombreCP";
+            this.labelNombreCP.Size = new System.Drawing.Size(66, 18);
+            this.labelNombreCP.TabIndex = 0;
+            this.labelNombreCP.Text = "Nombre:";
+            // 
             // groupBoxOtros
             // 
             this.groupBoxOtros.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -387,104 +486,6 @@
             this.tabPageContactos.TabIndex = 2;
             this.tabPageContactos.Text = "Contactos";
             this.tabPageContactos.UseVisualStyleBackColor = true;
-            // 
-            // labelNombreCP
-            // 
-            this.labelNombreCP.AutoSize = true;
-            this.labelNombreCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNombreCP.Location = new System.Drawing.Point(7, 28);
-            this.labelNombreCP.Name = "labelNombreCP";
-            this.labelNombreCP.Size = new System.Drawing.Size(66, 18);
-            this.labelNombreCP.TabIndex = 0;
-            this.labelNombreCP.Text = "Nombre:";
-            // 
-            // labelCargoCP
-            // 
-            this.labelCargoCP.AutoSize = true;
-            this.labelCargoCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCargoCP.Location = new System.Drawing.Point(7, 50);
-            this.labelCargoCP.Name = "labelCargoCP";
-            this.labelCargoCP.Size = new System.Drawing.Size(53, 18);
-            this.labelCargoCP.TabIndex = 1;
-            this.labelCargoCP.Text = "Cargo:";
-            // 
-            // labelCorreoCP
-            // 
-            this.labelCorreoCP.AutoSize = true;
-            this.labelCorreoCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCorreoCP.Location = new System.Drawing.Point(7, 94);
-            this.labelCorreoCP.Name = "labelCorreoCP";
-            this.labelCorreoCP.Size = new System.Drawing.Size(63, 18);
-            this.labelCorreoCP.TabIndex = 3;
-            this.labelCorreoCP.Text = "Correo: ";
-            // 
-            // labelTelCP
-            // 
-            this.labelTelCP.AutoSize = true;
-            this.labelTelCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTelCP.Location = new System.Drawing.Point(7, 72);
-            this.labelTelCP.Name = "labelTelCP";
-            this.labelTelCP.Size = new System.Drawing.Size(70, 18);
-            this.labelTelCP.TabIndex = 2;
-            this.labelTelCP.Text = "Teléfono:";
-            // 
-            // labelUltimoContacto
-            // 
-            this.labelUltimoContacto.AutoSize = true;
-            this.labelUltimoContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUltimoContacto.Location = new System.Drawing.Point(7, 165);
-            this.labelUltimoContacto.Name = "labelUltimoContacto";
-            this.labelUltimoContacto.Size = new System.Drawing.Size(121, 18);
-            this.labelUltimoContacto.TabIndex = 4;
-            this.labelUltimoContacto.Text = "Último contacto: ";
-            // 
-            // textBoxNombreCP
-            // 
-            this.textBoxNombreCP.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxNombreCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNombreCP.Location = new System.Drawing.Point(137, 28);
-            this.textBoxNombreCP.Name = "textBoxNombreCP";
-            this.textBoxNombreCP.Size = new System.Drawing.Size(390, 17);
-            this.textBoxNombreCP.TabIndex = 5;
-            this.textBoxNombreCP.Text = "Pepito";
-            // 
-            // textBoxCargoCP
-            // 
-            this.textBoxCargoCP.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxCargoCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCargoCP.Location = new System.Drawing.Point(137, 51);
-            this.textBoxCargoCP.Name = "textBoxCargoCP";
-            this.textBoxCargoCP.Size = new System.Drawing.Size(390, 17);
-            this.textBoxCargoCP.TabIndex = 6;
-            this.textBoxCargoCP.Text = "Líder Supremo";
-            // 
-            // textBoxTelCP
-            // 
-            this.textBoxTelCP.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxTelCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTelCP.Location = new System.Drawing.Point(137, 72);
-            this.textBoxTelCP.Name = "textBoxTelCP";
-            this.textBoxTelCP.Size = new System.Drawing.Size(390, 17);
-            this.textBoxTelCP.TabIndex = 7;
-            this.textBoxTelCP.Text = "7777777-77";
-            // 
-            // textBoxCorreoCP
-            // 
-            this.textBoxCorreoCP.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxCorreoCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCorreoCP.Location = new System.Drawing.Point(137, 94);
-            this.textBoxCorreoCP.Name = "textBoxCorreoCP";
-            this.textBoxCorreoCP.Size = new System.Drawing.Size(390, 17);
-            this.textBoxCorreoCP.TabIndex = 8;
-            this.textBoxCorreoCP.Text = "Pepito@stabletec.org";
-            // 
-            // dateTimePickerCP
-            // 
-            this.dateTimePickerCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerCP.Location = new System.Drawing.Point(137, 163);
-            this.dateTimePickerCP.Name = "dateTimePickerCP";
-            this.dateTimePickerCP.Size = new System.Drawing.Size(250, 21);
-            this.dateTimePickerCP.TabIndex = 9;
             // 
             // Cliente
             // 
@@ -522,7 +523,7 @@
         private System.Windows.Forms.TabPage tabPageResumen;
         private System.Windows.Forms.TabPage tabPageTareas;
         private System.Windows.Forms.TabPage tabPageContactos;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton toolStripButtonMinimizar;
         private System.Windows.Forms.ToolStripLabel toolStripLabelCliente;
         private System.Windows.Forms.ToolStripLabel toolStripLabelEstado;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
