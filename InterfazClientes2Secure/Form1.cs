@@ -37,8 +37,6 @@ namespace InterfazClientes2Secure
         // Métodos
         // ------------------------------------------------
 
-
-
         /// <summary>
         /// TODO Borrar. Atajo para crear nuevos clientes.
         /// </summary>

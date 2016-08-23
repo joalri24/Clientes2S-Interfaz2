@@ -29,7 +29,7 @@ namespace InterfazClientes2Secure
         // ------------------------------------------------
         // Atributos
         // ------------------------------------------------
-
+        private bool hayTareas;
         // ------------------------------------------------
         // Constructor
         // ------------------------------------------------
@@ -38,6 +38,7 @@ namespace InterfazClientes2Secure
         public Cliente()
         {
             InitializeComponent();
+            hayTareas = false;
         }
 
 
@@ -146,5 +147,25 @@ namespace InterfazClientes2Secure
         {
             this.Dispose();
         }
+
+        /// <summary>
+        /// Añade una nueva tarea en el tablelayout de tareas.
+        /// Una tarea por fila.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void NuevaTarea(object sender, EventArgs e)
+        {           
+            TableLayoutPanel tablaFondo = tableLayoutTareas;
+            if (!hayTareas)
+                hayTareas = true;
+            else
+                tablaFondo.RowCount++;
+
+            //tablaFondo.Controls.Add(new Cliente(), 0, tablaFondo.RowCount - 1);
+            tablaFondo.Controls.Add(new Label() { Text ="Tarea"}, 0, tablaFondo.RowCount - 1);
+            Console.WriteLine("Rows: " + tablaFondo.RowCount);
+        }
+        
     }
 }
