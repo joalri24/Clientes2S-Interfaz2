@@ -600,23 +600,23 @@
             this.tabPageContactos.Location = new System.Drawing.Point(4, 22);
             this.tabPageContactos.Name = "tabPageContactos";
             this.tabPageContactos.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageContactos.Size = new System.Drawing.Size(970, 304);
+            this.tabPageContactos.Size = new System.Drawing.Size(970, 371);
             this.tabPageContactos.TabIndex = 2;
             this.tabPageContactos.Text = "Contactos";
             this.tabPageContactos.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanelContactos
             // 
-            this.tableLayoutPanelContactos.ColumnCount = 2;
-            this.tableLayoutPanelContactos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelContactos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelContactos.ColumnCount = 1;
+            this.tableLayoutPanelContactos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanelContactos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanelContactos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelContactos.Location = new System.Drawing.Point(27, 3);
             this.tableLayoutPanelContactos.Name = "tableLayoutPanelContactos";
-            this.tableLayoutPanelContactos.RowCount = 2;
-            this.tableLayoutPanelContactos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelContactos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelContactos.Size = new System.Drawing.Size(940, 298);
+            this.tableLayoutPanelContactos.RowCount = 1;
+            this.tableLayoutPanelContactos.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanelContactos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelContactos.Size = new System.Drawing.Size(940, 365);
             this.tableLayoutPanelContactos.TabIndex = 2;
             // 
             // toolStrip2
@@ -631,7 +631,7 @@
             this.toolStripButton4});
             this.toolStrip2.Location = new System.Drawing.Point(3, 3);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(24, 298);
+            this.toolStrip2.Size = new System.Drawing.Size(24, 365);
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
             // 
