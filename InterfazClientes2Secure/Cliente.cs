@@ -135,5 +135,16 @@ namespace InterfazClientes2Secure
             }
         }
 
+        /// <summary>
+        /// Elimina un cliente. Quita el control.
+        /// TODO: El control se elimina pero la fila donde se encontraba 
+        /// queda vacía. Se deben eliminar las filas vacías en algún momento.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void toolStripButtonEliminar_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

@@ -184,6 +184,7 @@
             this.toolStripButtonEliminar.Name = "toolStripButtonEliminar";
             this.toolStripButtonEliminar.Size = new System.Drawing.Size(23, 22);
             this.toolStripButtonEliminar.Text = "X";
+            this.toolStripButtonEliminar.Click += new System.EventHandler(this.toolStripButtonEliminar_Click);
             // 
             // tabControlCliente
             // 
