@@ -558,11 +558,11 @@
             this.tableLayoutTareas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutTareas.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutTareas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutTareas.Location = new System.Drawing.Point(27, 3);
+            this.tableLayoutTareas.Location = new System.Drawing.Point(35, 3);
             this.tableLayoutTareas.Name = "tableLayoutTareas";
             this.tableLayoutTareas.RowCount = 1;
             this.tableLayoutTareas.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutTareas.Size = new System.Drawing.Size(940, 403);
+            this.tableLayoutTareas.Size = new System.Drawing.Size(932, 403);
             this.tableLayoutTareas.TabIndex = 1;
             // 
             // toolStrip1
@@ -577,7 +577,7 @@
             this.toolStripButtonMinimizarTodos});
             this.toolStrip1.Location = new System.Drawing.Point(3, 3);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(24, 403);
+            this.toolStrip1.Size = new System.Drawing.Size(32, 403);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -588,7 +588,7 @@
             this.toolStripButtonNuevaTarea.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonNuevaTarea.Image")));
             this.toolStripButtonNuevaTarea.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonNuevaTarea.Name = "toolStripButtonNuevaTarea";
-            this.toolStripButtonNuevaTarea.Size = new System.Drawing.Size(21, 23);
+            this.toolStripButtonNuevaTarea.Size = new System.Drawing.Size(23, 23);
             this.toolStripButtonNuevaTarea.Text = "+";
             this.toolStripButtonNuevaTarea.ToolTipText = "Añadir tarea";
             this.toolStripButtonNuevaTarea.Click += new System.EventHandler(this.NuevaTarea);
@@ -596,16 +596,17 @@
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(21, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(23, 6);
             // 
             // toolStripButtonOrdenarNombre
             // 
-            this.toolStripButtonOrdenarNombre.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonOrdenarNombre.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripButtonOrdenarNombre.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonOrdenarNombre.Image")));
             this.toolStripButtonOrdenarNombre.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonOrdenarNombre.Name = "toolStripButtonOrdenarNombre";
-            this.toolStripButtonOrdenarNombre.Size = new System.Drawing.Size(21, 20);
-            this.toolStripButtonOrdenarNombre.Text = "toolStripButton2";
+            this.toolStripButtonOrdenarNombre.Size = new System.Drawing.Size(29, 19);
+            this.toolStripButtonOrdenarNombre.Text = "Aa";
+            this.toolStripButtonOrdenarNombre.ToolTipText = "Ordenar por nombre";
             // 
             // toolStripButtonOrdenarEstado
             // 
@@ -613,22 +614,24 @@
             this.toolStripButtonOrdenarEstado.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonOrdenarEstado.Image")));
             this.toolStripButtonOrdenarEstado.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonOrdenarEstado.Name = "toolStripButtonOrdenarEstado";
-            this.toolStripButtonOrdenarEstado.Size = new System.Drawing.Size(21, 20);
-            this.toolStripButtonOrdenarEstado.Text = "toolStripButton3";
+            this.toolStripButtonOrdenarEstado.Size = new System.Drawing.Size(23, 20);
+            this.toolStripButtonOrdenarEstado.Text = "Es";
+            this.toolStripButtonOrdenarEstado.ToolTipText = "Ordenar por estado";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(21, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(23, 6);
             // 
             // toolStripButtonMinimizarTodos
             // 
-            this.toolStripButtonMinimizarTodos.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonMinimizarTodos.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripButtonMinimizarTodos.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonMinimizarTodos.Image")));
             this.toolStripButtonMinimizarTodos.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonMinimizarTodos.Name = "toolStripButtonMinimizarTodos";
-            this.toolStripButtonMinimizarTodos.Size = new System.Drawing.Size(21, 20);
-            this.toolStripButtonMinimizarTodos.Text = "toolStripButton4";
+            this.toolStripButtonMinimizarTodos.Size = new System.Drawing.Size(29, 19);
+            this.toolStripButtonMinimizarTodos.Text = "[-]";
+            this.toolStripButtonMinimizarTodos.ToolTipText = "Minimizar todos";
             // 
             // tabPageContactos
             // 
