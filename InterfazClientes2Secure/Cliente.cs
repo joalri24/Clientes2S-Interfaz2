@@ -31,7 +31,15 @@ namespace InterfazClientes2Secure
         // Atributos
         // ------------------------------------------------------------------
 
+        /// <summary>
+        /// Indica si hay o no tareas registradas en el cliente.
+        /// </summary>
         private bool hayTareas;
+
+        /// <summary>
+        /// Indica si hay o no contactos registrados en el cliente.
+        /// </summary>
+        private bool hayContactos;
 
 
         // ------------------------------------------------------------------
@@ -43,6 +51,7 @@ namespace InterfazClientes2Secure
         {
             InitializeComponent();
             hayTareas = false;
+            hayContactos = false;
         }
 
 
@@ -147,7 +156,7 @@ namespace InterfazClientes2Secure
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void toolStripButtonEliminar_Click(object sender, EventArgs e)
+        private void EliminarCliente(object sender, EventArgs e)
         {
             this.Dispose();
         }
@@ -169,6 +178,26 @@ namespace InterfazClientes2Secure
             tablaFondo.Controls.Add(new TareaControl(), 0, tablaFondo.RowCount - 1);
             //tablaFondo.Controls.Add(new Label() { Text ="Tarea"}, 0, tablaFondo.RowCount - 1);
             Console.WriteLine("Rows: " + tablaFondo.RowCount);
-        }       
+        }
+
+        /// <summary>
+        /// Añade un nuevo contacto en el tablelayout de contactos.
+        /// Un contacto por fila.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void NuevoContacto(object sender, EventArgs e)
+        {
+            TableLayoutPanel tablaFondo = tableLayoutContactos;
+            if (!hayContactos)
+                hayContactos = true;
+            else
+                tablaFondo.RowCount++;
+
+            tablaFondo.Controls.Add(new ContactoControl(), 0, tablaFondo.RowCount - 1);
+            //tablaFondo.Controls.Add(new Label() { Text ="Tarea"}, 0, tablaFondo.RowCount - 1);
+            Console.WriteLine("Rows: " + tablaFondo.RowCount);
+        }
+
     }
 }

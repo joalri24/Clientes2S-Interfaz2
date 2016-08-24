@@ -18,7 +18,7 @@ namespace InterfazClientes2Secure
         // ------------------------------------------------------------------
 
         // Tamaños para maximizar y minimizar
-        private const int ALTURA_ORIGINAL = 285;
+        private const int ALTURA_ORIGINAL = 210;
         private const int ALTURA_MINIMIZADO = 25;
 
 
@@ -62,6 +62,54 @@ namespace InterfazClientes2Secure
                 toolStripButtonMinimizarContacto.Text = "[-]";
                 toolStripButtonMinimizarContacto.ToolTipText = "Minimizar";
             }
+        }
+
+        /// <summary>
+        /// Elimina al contacto. Quita el control.
+        /// TODO: El control se elimina pero la fila donde se encontraba 
+        /// queda vacía. Se deben eliminar las filas vacías en algún momento.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void EliminarContacto(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        /// <summary>
+        /// Cambia el estilo del borde cuando se hace click en el textbox.
+        /// Activa un borde 3d.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TextBox_Enter(object sender, EventArgs e)
+        {
+            TextBox textbox = sender as TextBox;
+            textbox.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        /// <summary>
+        /// Cambia el estilo del borde cuando se le quita el foco al textbox.
+        /// Queda sin ningún borde.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TextBox_Leave(object sender, EventArgs e)
+        {
+            TextBox textbox = sender as TextBox;
+            textbox.BorderStyle = BorderStyle.None;
+        }
+
+        /// <summary>
+        /// Actualiza el nombre del contacto en la barra superior cuando
+        /// se modifica el campo correspondiente.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void textBoxNombreContacto_TextChanged(object sender, EventArgs e)
+        {
+            TextBox textbox = sender as TextBox;
+            toolStripLabelContacto.Text = textbox.Text;
         }
     }
 }

@@ -73,7 +73,7 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButtonMinimizarTodos = new System.Windows.Forms.ToolStripButton();
             this.tabPageContactos = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanelContactos = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutContactos = new System.Windows.Forms.TableLayoutPanel();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonNuevoContacto = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
@@ -204,7 +204,7 @@
             this.toolStripButtonEliminar.Name = "toolStripButtonEliminar";
             this.toolStripButtonEliminar.Size = new System.Drawing.Size(23, 22);
             this.toolStripButtonEliminar.Text = "X";
-            this.toolStripButtonEliminar.Click += new System.EventHandler(this.toolStripButtonEliminar_Click);
+            this.toolStripButtonEliminar.Click += new System.EventHandler(this.EliminarCliente);
             // 
             // tabControlCliente
             // 
@@ -509,7 +509,7 @@
             this.tabPageTareas.Location = new System.Drawing.Point(4, 22);
             this.tabPageTareas.Name = "tabPageTareas";
             this.tabPageTareas.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTareas.Size = new System.Drawing.Size(970, 304);
+            this.tabPageTareas.Size = new System.Drawing.Size(970, 371);
             this.tabPageTareas.TabIndex = 1;
             this.tabPageTareas.Text = "Tareas";
             this.tabPageTareas.UseVisualStyleBackColor = true;
@@ -525,7 +525,7 @@
             this.tableLayoutTareas.Name = "tableLayoutTareas";
             this.tableLayoutTareas.RowCount = 1;
             this.tableLayoutTareas.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutTareas.Size = new System.Drawing.Size(940, 298);
+            this.tableLayoutTareas.Size = new System.Drawing.Size(940, 365);
             this.tableLayoutTareas.TabIndex = 1;
             // 
             // toolStrip1
@@ -540,7 +540,7 @@
             this.toolStripButtonMinimizarTodos});
             this.toolStrip1.Location = new System.Drawing.Point(3, 3);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(24, 298);
+            this.toolStrip1.Size = new System.Drawing.Size(24, 365);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -595,7 +595,7 @@
             // 
             // tabPageContactos
             // 
-            this.tabPageContactos.Controls.Add(this.tableLayoutPanelContactos);
+            this.tabPageContactos.Controls.Add(this.tableLayoutContactos);
             this.tabPageContactos.Controls.Add(this.toolStrip2);
             this.tabPageContactos.Location = new System.Drawing.Point(4, 22);
             this.tabPageContactos.Name = "tabPageContactos";
@@ -605,19 +605,18 @@
             this.tabPageContactos.Text = "Contactos";
             this.tabPageContactos.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanelContactos
+            // tableLayoutContactos
             // 
-            this.tableLayoutPanelContactos.ColumnCount = 1;
-            this.tableLayoutPanelContactos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelContactos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanelContactos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanelContactos.Location = new System.Drawing.Point(27, 3);
-            this.tableLayoutPanelContactos.Name = "tableLayoutPanelContactos";
-            this.tableLayoutPanelContactos.RowCount = 1;
-            this.tableLayoutPanelContactos.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanelContactos.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanelContactos.Size = new System.Drawing.Size(940, 365);
-            this.tableLayoutPanelContactos.TabIndex = 2;
+            this.tableLayoutContactos.AutoScroll = true;
+            this.tableLayoutContactos.ColumnCount = 1;
+            this.tableLayoutContactos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutContactos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutContactos.Location = new System.Drawing.Point(27, 3);
+            this.tableLayoutContactos.Name = "tableLayoutContactos";
+            this.tableLayoutContactos.RowCount = 1;
+            this.tableLayoutContactos.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutContactos.Size = new System.Drawing.Size(940, 365);
+            this.tableLayoutContactos.TabIndex = 2;
             // 
             // toolStrip2
             // 
@@ -645,6 +644,7 @@
             this.toolStripButtonNuevoContacto.Size = new System.Drawing.Size(21, 23);
             this.toolStripButtonNuevoContacto.Text = "+";
             this.toolStripButtonNuevoContacto.ToolTipText = "Añadir tarea";
+            this.toolStripButtonNuevoContacto.Click += new System.EventHandler(this.NuevoContacto);
             // 
             // toolStripSeparator4
             // 
@@ -766,7 +766,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButtonOrdenarEstado;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton toolStripButtonMinimizarTodos;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelContactos;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutContactos;
         private System.Windows.Forms.ToolStrip toolStrip2;
         private System.Windows.Forms.ToolStripButton toolStripButtonNuevoContacto;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;

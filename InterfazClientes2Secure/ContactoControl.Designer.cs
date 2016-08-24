@@ -36,11 +36,25 @@
             this.splitContainerContacto = new System.Windows.Forms.SplitContainer();
             this.groupBoxInfo = new System.Windows.Forms.GroupBox();
             this.groupBoxOtros = new System.Windows.Forms.GroupBox();
+            this.labelNombreContacto = new System.Windows.Forms.Label();
+            this.textBoxNombreContacto = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.labelCargoContacto = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.labelTelefonoContacto = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.labelCelularContacto = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.labelCorreoContacto = new System.Windows.Forms.Label();
+            this.labelNotasContacto = new System.Windows.Forms.Label();
+            this.textBoxNotasContacto = new System.Windows.Forms.TextBox();
             this.toolStripContacto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerContacto)).BeginInit();
             this.splitContainerContacto.Panel1.SuspendLayout();
             this.splitContainerContacto.Panel2.SuspendLayout();
             this.splitContainerContacto.SuspendLayout();
+            this.groupBoxInfo.SuspendLayout();
+            this.groupBoxOtros.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripContacto
@@ -66,6 +80,7 @@
             this.toolStripButtonMinimizarContacto.Size = new System.Drawing.Size(24, 22);
             this.toolStripButtonMinimizarContacto.Text = "[-]";
             this.toolStripButtonMinimizarContacto.ToolTipText = "Minimizar";
+            this.toolStripButtonMinimizarContacto.Click += new System.EventHandler(this.Minimizar);
             // 
             // toolStripLabelContacto
             // 
@@ -84,6 +99,7 @@
             this.toolStripButtonEliminarContacto.Name = "toolStripButtonEliminarContacto";
             this.toolStripButtonEliminarContacto.Size = new System.Drawing.Size(23, 22);
             this.toolStripButtonEliminarContacto.Text = "X";
+            this.toolStripButtonEliminarContacto.Click += new System.EventHandler(this.EliminarContacto);
             // 
             // splitContainerContacto
             // 
@@ -98,31 +114,168 @@
             // splitContainerContacto.Panel2
             // 
             this.splitContainerContacto.Panel2.Controls.Add(this.groupBoxOtros);
-            this.splitContainerContacto.Size = new System.Drawing.Size(902, 260);
+            this.splitContainerContacto.Size = new System.Drawing.Size(902, 184);
             this.splitContainerContacto.SplitterDistance = 434;
             this.splitContainerContacto.TabIndex = 3;
             // 
             // groupBoxInfo
             // 
+            this.groupBoxInfo.Controls.Add(this.textBox5);
+            this.groupBoxInfo.Controls.Add(this.labelCorreoContacto);
+            this.groupBoxInfo.Controls.Add(this.textBox4);
+            this.groupBoxInfo.Controls.Add(this.labelCelularContacto);
+            this.groupBoxInfo.Controls.Add(this.textBox3);
+            this.groupBoxInfo.Controls.Add(this.labelTelefonoContacto);
+            this.groupBoxInfo.Controls.Add(this.textBox2);
+            this.groupBoxInfo.Controls.Add(this.labelCargoContacto);
+            this.groupBoxInfo.Controls.Add(this.textBoxNombreContacto);
+            this.groupBoxInfo.Controls.Add(this.labelNombreContacto);
             this.groupBoxInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBoxInfo.ForeColor = System.Drawing.Color.Brown;
             this.groupBoxInfo.Location = new System.Drawing.Point(0, 0);
             this.groupBoxInfo.Name = "groupBoxInfo";
-            this.groupBoxInfo.Size = new System.Drawing.Size(434, 260);
+            this.groupBoxInfo.Size = new System.Drawing.Size(434, 184);
             this.groupBoxInfo.TabIndex = 0;
             this.groupBoxInfo.TabStop = false;
             this.groupBoxInfo.Text = "Contacto";
             // 
             // groupBoxOtros
             // 
+            this.groupBoxOtros.Controls.Add(this.textBoxNotasContacto);
+            this.groupBoxOtros.Controls.Add(this.labelNotasContacto);
             this.groupBoxOtros.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBoxOtros.ForeColor = System.Drawing.Color.Brown;
             this.groupBoxOtros.Location = new System.Drawing.Point(0, 0);
             this.groupBoxOtros.Name = "groupBoxOtros";
-            this.groupBoxOtros.Size = new System.Drawing.Size(464, 260);
+            this.groupBoxOtros.Size = new System.Drawing.Size(464, 184);
             this.groupBoxOtros.TabIndex = 0;
             this.groupBoxOtros.TabStop = false;
             this.groupBoxOtros.Text = "Otros";
+            // 
+            // labelNombreContacto
+            // 
+            this.labelNombreContacto.AutoSize = true;
+            this.labelNombreContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNombreContacto.Location = new System.Drawing.Point(6, 31);
+            this.labelNombreContacto.Name = "labelNombreContacto";
+            this.labelNombreContacto.Size = new System.Drawing.Size(66, 18);
+            this.labelNombreContacto.TabIndex = 0;
+            this.labelNombreContacto.Text = "Nombre:";
+            // 
+            // textBoxNombreContacto
+            // 
+            this.textBoxNombreContacto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxNombreContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNombreContacto.Location = new System.Drawing.Point(109, 28);
+            this.textBoxNombreContacto.Name = "textBoxNombreContacto";
+            this.textBoxNombreContacto.Size = new System.Drawing.Size(310, 17);
+            this.textBoxNombreContacto.TabIndex = 1;
+            this.textBoxNombreContacto.TextChanged += new System.EventHandler(this.textBoxNombreContacto_TextChanged);
+            this.textBoxNombreContacto.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBoxNombreContacto.Leave += new System.EventHandler(this.TextBox_Leave);
+            // 
+            // textBox2
+            // 
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(109, 55);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(310, 17);
+            this.textBox2.TabIndex = 3;
+            this.textBox2.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBox2.Leave += new System.EventHandler(this.TextBox_Leave);
+            // 
+            // labelCargoContacto
+            // 
+            this.labelCargoContacto.AutoSize = true;
+            this.labelCargoContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCargoContacto.Location = new System.Drawing.Point(6, 58);
+            this.labelCargoContacto.Name = "labelCargoContacto";
+            this.labelCargoContacto.Size = new System.Drawing.Size(53, 18);
+            this.labelCargoContacto.TabIndex = 2;
+            this.labelCargoContacto.Text = "Cargo:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(109, 82);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(310, 17);
+            this.textBox3.TabIndex = 5;
+            this.textBox3.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBox3.Leave += new System.EventHandler(this.TextBox_Leave);
+            // 
+            // labelTelefonoContacto
+            // 
+            this.labelTelefonoContacto.AutoSize = true;
+            this.labelTelefonoContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTelefonoContacto.Location = new System.Drawing.Point(6, 85);
+            this.labelTelefonoContacto.Name = "labelTelefonoContacto";
+            this.labelTelefonoContacto.Size = new System.Drawing.Size(70, 18);
+            this.labelTelefonoContacto.TabIndex = 4;
+            this.labelTelefonoContacto.Text = "Teléfono:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(109, 106);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(310, 17);
+            this.textBox4.TabIndex = 7;
+            this.textBox4.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBox4.Leave += new System.EventHandler(this.TextBox_Leave);
+            // 
+            // labelCelularContacto
+            // 
+            this.labelCelularContacto.AutoSize = true;
+            this.labelCelularContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCelularContacto.Location = new System.Drawing.Point(6, 109);
+            this.labelCelularContacto.Name = "labelCelularContacto";
+            this.labelCelularContacto.Size = new System.Drawing.Size(58, 18);
+            this.labelCelularContacto.TabIndex = 6;
+            this.labelCelularContacto.Text = "Celular:";
+            // 
+            // textBox5
+            // 
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(109, 130);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(310, 17);
+            this.textBox5.TabIndex = 9;
+            this.textBox5.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBox5.Leave += new System.EventHandler(this.TextBox_Leave);
+            // 
+            // labelCorreoContacto
+            // 
+            this.labelCorreoContacto.AutoSize = true;
+            this.labelCorreoContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCorreoContacto.Location = new System.Drawing.Point(6, 133);
+            this.labelCorreoContacto.Name = "labelCorreoContacto";
+            this.labelCorreoContacto.Size = new System.Drawing.Size(59, 18);
+            this.labelCorreoContacto.TabIndex = 8;
+            this.labelCorreoContacto.Text = "Correo:";
+            // 
+            // labelNotasContacto
+            // 
+            this.labelNotasContacto.AutoSize = true;
+            this.labelNotasContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNotasContacto.Location = new System.Drawing.Point(6, 16);
+            this.labelNotasContacto.Name = "labelNotasContacto";
+            this.labelNotasContacto.Size = new System.Drawing.Size(52, 18);
+            this.labelNotasContacto.TabIndex = 1;
+            this.labelNotasContacto.Text = "Notas:";
+            // 
+            // textBoxNotasContacto
+            // 
+            this.textBoxNotasContacto.Location = new System.Drawing.Point(9, 37);
+            this.textBoxNotasContacto.Multiline = true;
+            this.textBoxNotasContacto.Name = "textBoxNotasContacto";
+            this.textBoxNotasContacto.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxNotasContacto.Size = new System.Drawing.Size(437, 117);
+            this.textBoxNotasContacto.TabIndex = 2;
             // 
             // ContactoControl
             // 
@@ -131,13 +284,17 @@
             this.Controls.Add(this.splitContainerContacto);
             this.Controls.Add(this.toolStripContacto);
             this.Name = "ContactoControl";
-            this.Size = new System.Drawing.Size(902, 285);
+            this.Size = new System.Drawing.Size(902, 209);
             this.toolStripContacto.ResumeLayout(false);
             this.toolStripContacto.PerformLayout();
             this.splitContainerContacto.Panel1.ResumeLayout(false);
             this.splitContainerContacto.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerContacto)).EndInit();
             this.splitContainerContacto.ResumeLayout(false);
+            this.groupBoxInfo.ResumeLayout(false);
+            this.groupBoxInfo.PerformLayout();
+            this.groupBoxOtros.ResumeLayout(false);
+            this.groupBoxOtros.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,5 +309,17 @@
         private System.Windows.Forms.SplitContainer splitContainerContacto;
         private System.Windows.Forms.GroupBox groupBoxInfo;
         private System.Windows.Forms.GroupBox groupBoxOtros;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label labelCorreoContacto;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label labelCelularContacto;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label labelTelefonoContacto;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label labelCargoContacto;
+        private System.Windows.Forms.TextBox textBoxNombreContacto;
+        private System.Windows.Forms.Label labelNombreContacto;
+        private System.Windows.Forms.TextBox textBoxNotasContacto;
+        private System.Windows.Forms.Label labelNotasContacto;
     }
 }
