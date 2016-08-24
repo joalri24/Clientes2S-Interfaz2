@@ -58,16 +58,20 @@ namespace InterfazClientes2Secure
         private void CrearCliente(object sender, EventArgs e)
         {
             FormNuevoCliente dialogo = new FormNuevoCliente();
+
             // Abre una ventana de dialogo para obtener la información del nuevo cliente.
             if (dialogo.ShowDialog() == DialogResult.OK)
             {
                 TableLayoutPanel tablaFondo = tableLayoutClientes;
+                ClienteControl controlCliente = new ClienteControl(dialogo.darNombreCliente());
+
+
                 if (vacio)
                     vacio = false;
                 else
                     tablaFondo.RowCount++;
 
-                tablaFondo.Controls.Add(new ClienteControl(), 0, tablaFondo.RowCount - 1);
+                tablaFondo.Controls.Add(controlCliente, 0, tablaFondo.RowCount - 1);
             }           
             
         }

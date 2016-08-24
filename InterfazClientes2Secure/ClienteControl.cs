@@ -43,7 +43,7 @@ namespace InterfazClientes2Secure
 
 
         // ------------------------------------------------------------------
-        // Constructor
+        // Constructores
         // ------------------------------------------------------------------
 
 
@@ -52,6 +52,17 @@ namespace InterfazClientes2Secure
             InitializeComponent();
             hayTareas = false;
             hayContactos = false;
+        }
+
+        public ClienteControl(string nombreCliente)
+        {
+            InitializeComponent();
+            hayTareas = false;
+            hayContactos = false;
+
+            textBoxNombreCliente.Text = nombreCliente;
+            toolStripLabelCliente.Text = nombreCliente;
+
         }
 
 

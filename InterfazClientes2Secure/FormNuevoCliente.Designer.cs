@@ -86,6 +86,7 @@
             // 
             // buttonCancelar
             // 
+            this.buttonCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonCancelar.Location = new System.Drawing.Point(638, 184);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(75, 23);
@@ -96,6 +97,7 @@
             // buttonAceptar
             // 
             this.buttonAceptar.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.buttonAceptar.Enabled = false;
             this.buttonAceptar.Location = new System.Drawing.Point(557, 184);
             this.buttonAceptar.Name = "buttonAceptar";
             this.buttonAceptar.Size = new System.Drawing.Size(75, 23);
@@ -120,6 +122,7 @@
             this.textBoxNombreCliente.Name = "textBoxNombreCliente";
             this.textBoxNombreCliente.Size = new System.Drawing.Size(260, 24);
             this.textBoxNombreCliente.TabIndex = 1;
+            this.textBoxNombreCliente.TextChanged += new System.EventHandler(this.textBoxNombreCliente_TextChanged);
             // 
             // labelTipoAsociacion
             // 
