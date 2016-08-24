@@ -63,9 +63,11 @@ namespace InterfazClientes2Secure
             if (dialogo.ShowDialog() == DialogResult.OK)
             {
                 TableLayoutPanel tablaFondo = tableLayoutClientes;
-                ClienteControl controlCliente = new ClienteControl(dialogo.darNombreCliente());
+                Cliente cliente = new Cliente(dialogo.darNombreCliente(), dialogo.darTipoAsociacion());
+                ClienteControl controlCliente = new ClienteControl(cliente);
 
-
+                // La sentencia if es para que no se cree una nueva fila si exiten filas vacías
+                // disponibles donde se puede poner el nuevo cliente.
                 if (vacio)
                     vacio = false;
                 else

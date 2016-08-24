@@ -90,7 +90,7 @@
             this.helpToolStripButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(961, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1014, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -187,7 +187,7 @@
             this.tableLayoutClientes.Name = "tableLayoutClientes";
             this.tableLayoutClientes.RowCount = 1;
             this.tableLayoutClientes.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutClientes.Size = new System.Drawing.Size(961, 412);
+            this.tableLayoutClientes.Size = new System.Drawing.Size(1014, 485);
             this.tableLayoutClientes.TabIndex = 1;
             // 
             // menuStrip1
@@ -199,7 +199,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(961, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1014, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -429,7 +429,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(961, 461);
+            this.ClientSize = new System.Drawing.Size(1014, 534);
             this.Controls.Add(this.tableLayoutClientes);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);

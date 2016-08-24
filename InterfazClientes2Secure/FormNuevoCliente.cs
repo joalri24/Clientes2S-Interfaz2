@@ -39,5 +39,16 @@ namespace InterfazClientes2Secure
         {
             return textBoxNombreCliente.Text;
         }
+
+        public String darTipoAsociacion()
+        {
+            string respuesta = "Directo";
+
+            if (radioButtonIntermediario.Checked)
+                respuesta = radioButtonIntermediario.Text;
+
+            return respuesta;
+        }
+
     }
 }

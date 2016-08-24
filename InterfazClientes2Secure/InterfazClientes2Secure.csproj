@@ -52,6 +52,7 @@
     <Compile Include="BarraNuevoClienteControl.Designer.cs">
       <DependentUpon>BarraNuevoClienteControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cliente.cs" />
     <Compile Include="ClienteControl.cs">
       <SubType>UserControl</SubType>
     </Compile>

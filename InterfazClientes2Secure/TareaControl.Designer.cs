@@ -371,6 +371,8 @@
             this.textBoxTareaCorreoContacto.Size = new System.Drawing.Size(291, 17);
             this.textBoxTareaCorreoContacto.TabIndex = 12;
             this.textBoxTareaCorreoContacto.Text = "kbrowflotsky@organizacion.org";
+            this.textBoxTareaCorreoContacto.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBoxTareaCorreoContacto.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // labelTareaContactoCorreo
             // 
@@ -391,6 +393,8 @@
             this.textBoxTareaTelContacto.Size = new System.Drawing.Size(291, 17);
             this.textBoxTareaTelContacto.TabIndex = 10;
             this.textBoxTareaTelContacto.Text = "242242-24";
+            this.textBoxTareaTelContacto.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBoxTareaTelContacto.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // labelTareaTelContacto
             // 
@@ -411,6 +415,8 @@
             this.textBoxTareaCargoContacto.Size = new System.Drawing.Size(291, 17);
             this.textBoxTareaCargoContacto.TabIndex = 8;
             this.textBoxTareaCargoContacto.Text = "Segundo al mando";
+            this.textBoxTareaCargoContacto.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBoxTareaCargoContacto.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // labelTareaContactoCargo
             // 
@@ -431,6 +437,8 @@
             this.textBoxTareaNombreContacto.Size = new System.Drawing.Size(291, 17);
             this.textBoxTareaNombreContacto.TabIndex = 6;
             this.textBoxTareaNombreContacto.Text = "Kyle Browflotsky";
+            this.textBoxTareaNombreContacto.Enter += new System.EventHandler(this.TextBox_Enter);
+            this.textBoxTareaNombreContacto.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // labelTareaNombreContacto
             // 
