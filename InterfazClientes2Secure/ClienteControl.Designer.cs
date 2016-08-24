@@ -52,7 +52,7 @@
             this.labelTipoAsociacion = new System.Windows.Forms.Label();
             this.textBoxNombreCliente = new System.Windows.Forms.TextBox();
             this.groupBoxContactoP = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonSeleccionarUsuario = new System.Windows.Forms.Button();
             this.dateTimePickerCP = new System.Windows.Forms.DateTimePicker();
             this.textBoxCorreoCP = new System.Windows.Forms.TextBox();
             this.textBoxTelCP = new System.Windows.Forms.TextBox();
@@ -370,7 +370,7 @@
             // 
             // groupBoxContactoP
             // 
-            this.groupBoxContactoP.Controls.Add(this.button1);
+            this.groupBoxContactoP.Controls.Add(this.buttonSeleccionarUsuario);
             this.groupBoxContactoP.Controls.Add(this.dateTimePickerCP);
             this.groupBoxContactoP.Controls.Add(this.textBoxCorreoCP);
             this.groupBoxContactoP.Controls.Add(this.textBoxTelCP);
@@ -390,15 +390,15 @@
             this.groupBoxContactoP.TabStop = false;
             this.groupBoxContactoP.Text = "Contacto principal";
             // 
-            // button1
+            // buttonSeleccionarUsuario
             // 
-            this.button1.AutoSize = true;
-            this.button1.Location = new System.Drawing.Point(456, 27);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(26, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonSeleccionarUsuario.AutoSize = true;
+            this.buttonSeleccionarUsuario.Location = new System.Drawing.Point(456, 27);
+            this.buttonSeleccionarUsuario.Name = "buttonSeleccionarUsuario";
+            this.buttonSeleccionarUsuario.Size = new System.Drawing.Size(26, 23);
+            this.buttonSeleccionarUsuario.TabIndex = 10;
+            this.buttonSeleccionarUsuario.Text = "...";
+            this.buttonSeleccionarUsuario.UseVisualStyleBackColor = true;
             // 
             // dateTimePickerCP
             // 
@@ -815,6 +815,6 @@
         private System.Windows.Forms.ToolStripButton toolStripButton4;
         private System.Windows.Forms.TextBox textBoxPendientes;
         private System.Windows.Forms.Label labelPendientes;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonSeleccionarUsuario;
     }
 }

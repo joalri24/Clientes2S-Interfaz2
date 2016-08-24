@@ -71,7 +71,9 @@
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.barraNuevoClienteControl1 = new InterfazClientes2Secure.BarraNuevoClienteControl();
             this.toolStrip1.SuspendLayout();
+            this.tableLayoutClientes.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -182,6 +184,7 @@
             this.tableLayoutClientes.AutoScroll = true;
             this.tableLayoutClientes.ColumnCount = 1;
             this.tableLayoutClientes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutClientes.Controls.Add(this.barraNuevoClienteControl1, 0, 0);
             this.tableLayoutClientes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutClientes.Location = new System.Drawing.Point(0, 49);
             this.tableLayoutClientes.Name = "tableLayoutClientes";
@@ -425,6 +428,13 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
             // 
+            // barraNuevoClienteControl1
+            // 
+            this.barraNuevoClienteControl1.Location = new System.Drawing.Point(3, 3);
+            this.barraNuevoClienteControl1.Name = "barraNuevoClienteControl1";
+            this.barraNuevoClienteControl1.Size = new System.Drawing.Size(955, 30);
+            this.barraNuevoClienteControl1.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -439,6 +449,7 @@
             this.Text = "Clientes 2Secure";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.tableLayoutClientes.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -490,6 +501,7 @@
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private BarraNuevoClienteControl barraNuevoClienteControl1;
     }
 }
 

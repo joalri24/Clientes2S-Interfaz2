@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BarraNuevoClienteControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BarraNuevoClienteControl.Designer.cs">
+      <DependentUpon>BarraNuevoClienteControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClienteControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     <Compile Include="TareaControl.Designer.cs">
       <DependentUpon>TareaControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BarraNuevoClienteControl.resx">
+      <DependentUpon>BarraNuevoClienteControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClienteControl.resx">
       <DependentUpon>ClienteControl.cs</DependentUpon>
     </EmbeddedResource>

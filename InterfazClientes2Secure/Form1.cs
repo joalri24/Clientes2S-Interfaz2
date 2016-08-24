@@ -29,7 +29,7 @@ namespace InterfazClientes2Secure
         public Form1()
         {
             InitializeComponent();
-            vacio = true;
+            vacio = false;
         }
 
 
