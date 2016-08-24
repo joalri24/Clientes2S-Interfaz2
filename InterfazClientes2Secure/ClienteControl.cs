@@ -177,7 +177,7 @@ namespace InterfazClientes2Secure
 
             tablaFondo.Controls.Add(new TareaControl(), 0, tablaFondo.RowCount - 1);
             //tablaFondo.Controls.Add(new Label() { Text ="Tarea"}, 0, tablaFondo.RowCount - 1);
-            Console.WriteLine("Rows: " + tablaFondo.RowCount);
+            //Console.WriteLine("Rows: " + tablaFondo.RowCount);
         }
 
         /// <summary>
@@ -196,7 +196,7 @@ namespace InterfazClientes2Secure
 
             tablaFondo.Controls.Add(new ContactoControl(), 0, tablaFondo.RowCount - 1);
             //tablaFondo.Controls.Add(new Label() { Text ="Tarea"}, 0, tablaFondo.RowCount - 1);
-            Console.WriteLine("Rows: " + tablaFondo.RowCount);
+            //Console.WriteLine("Rows: " + tablaFondo.RowCount);
         }
 
     }

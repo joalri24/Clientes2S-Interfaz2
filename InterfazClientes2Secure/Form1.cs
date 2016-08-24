@@ -29,7 +29,7 @@ namespace InterfazClientes2Secure
         public Form1()
         {
             InitializeComponent();
-            vacio = false;
+            vacio = true;
         }
 
 
@@ -49,7 +49,27 @@ namespace InterfazClientes2Secure
                 tablaFondo.RowCount++;
 
             tablaFondo.Controls.Add(new ClienteControl(), 0, tablaFondo.RowCount - 1);
-            Console.WriteLine("Rows: " + tablaFondo.RowCount);
+            //Console.WriteLine("Rows: " + tablaFondo.RowCount);
+        }
+
+        /// <summary>
+        /// Crear nuevo cliente cuando se hace click en el botón correspondiente.
+        /// </summary>
+        private void CrearCliente(object sender, EventArgs e)
+        {
+            FormNuevoCliente dialogo = new FormNuevoCliente();
+            // Abre una ventana de dialogo para obtener la información del nuevo cliente.
+            if (dialogo.ShowDialog() == DialogResult.OK)
+            {
+                TableLayoutPanel tablaFondo = tableLayoutClientes;
+                if (vacio)
+                    vacio = false;
+                else
+                    tablaFondo.RowCount++;
+
+                tablaFondo.Controls.Add(new ClienteControl(), 0, tablaFondo.RowCount - 1);
+            }           
+            
         }
     }
 }
