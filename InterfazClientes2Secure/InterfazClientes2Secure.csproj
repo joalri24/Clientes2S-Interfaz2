@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cliente.cs">
+    <Compile Include="ClienteControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Cliente.Designer.cs">
-      <DependentUpon>Cliente.cs</DependentUpon>
+    <Compile Include="ClienteControl.Designer.cs">
+      <DependentUpon>ClienteControl.cs</DependentUpon>
     </Compile>
     <Compile Include="ContactoControl.cs">
       <SubType>UserControl</SubType>
@@ -72,8 +72,8 @@
     <Compile Include="TareaControl.Designer.cs">
       <DependentUpon>TareaControl.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Cliente.resx">
-      <DependentUpon>Cliente.cs</DependentUpon>
+    <EmbeddedResource Include="ClienteControl.resx">
+      <DependentUpon>ClienteControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ContactoControl.resx">
       <DependentUpon>ContactoControl.cs</DependentUpon>

@@ -1,6 +1,6 @@
 ﻿namespace InterfazClientes2Secure
 {
-    partial class Cliente
+    partial class ClienteControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cliente));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClienteControl));
             this.toolStripCliente = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonMinimizar = new System.Windows.Forms.ToolStripButton();
             this.toolStripLabelCliente = new System.Windows.Forms.ToolStripLabel();
@@ -52,6 +52,7 @@
             this.labelTipoAsociacion = new System.Windows.Forms.Label();
             this.textBoxNombreCliente = new System.Windows.Forms.TextBox();
             this.groupBoxContactoP = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.dateTimePickerCP = new System.Windows.Forms.DateTimePicker();
             this.textBoxCorreoCP = new System.Windows.Forms.TextBox();
             this.textBoxTelCP = new System.Windows.Forms.TextBox();
@@ -63,6 +64,8 @@
             this.labelCargoCP = new System.Windows.Forms.Label();
             this.labelNombreCP = new System.Windows.Forms.Label();
             this.groupBoxOtros = new System.Windows.Forms.GroupBox();
+            this.textBoxPendientes = new System.Windows.Forms.TextBox();
+            this.labelPendientes = new System.Windows.Forms.Label();
             this.tabPageTareas = new System.Windows.Forms.TabPage();
             this.tableLayoutTareas = new System.Windows.Forms.TableLayoutPanel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -94,6 +97,7 @@
             this.splitContainerSuperior.SuspendLayout();
             this.groupBoxInfoGeneral.SuspendLayout();
             this.groupBoxContactoP.SuspendLayout();
+            this.groupBoxOtros.SuspendLayout();
             this.tabPageTareas.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.tabPageContactos.SuspendLayout();
@@ -215,7 +219,7 @@
             this.tabControlCliente.Location = new System.Drawing.Point(0, 25);
             this.tabControlCliente.Name = "tabControlCliente";
             this.tabControlCliente.SelectedIndex = 0;
-            this.tabControlCliente.Size = new System.Drawing.Size(978, 397);
+            this.tabControlCliente.Size = new System.Drawing.Size(978, 435);
             this.tabControlCliente.TabIndex = 1;
             // 
             // tabPageResumen
@@ -225,7 +229,7 @@
             this.tabPageResumen.Location = new System.Drawing.Point(4, 22);
             this.tabPageResumen.Name = "tabPageResumen";
             this.tabPageResumen.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageResumen.Size = new System.Drawing.Size(970, 371);
+            this.tabPageResumen.Size = new System.Drawing.Size(970, 409);
             this.tabPageResumen.TabIndex = 0;
             this.tabPageResumen.Text = "Resumen";
             this.tabPageResumen.UseVisualStyleBackColor = true;
@@ -244,8 +248,8 @@
             // splitContainerClienteFondo.Panel2
             // 
             this.splitContainerClienteFondo.Panel2.Controls.Add(this.groupBoxOtros);
-            this.splitContainerClienteFondo.Size = new System.Drawing.Size(964, 365);
-            this.splitContainerClienteFondo.SplitterDistance = 257;
+            this.splitContainerClienteFondo.Size = new System.Drawing.Size(964, 403);
+            this.splitContainerClienteFondo.SplitterDistance = 241;
             this.splitContainerClienteFondo.TabIndex = 0;
             // 
             // splitContainerSuperior
@@ -261,7 +265,7 @@
             // splitContainerSuperior.Panel2
             // 
             this.splitContainerSuperior.Panel2.Controls.Add(this.groupBoxContactoP);
-            this.splitContainerSuperior.Size = new System.Drawing.Size(964, 257);
+            this.splitContainerSuperior.Size = new System.Drawing.Size(964, 241);
             this.splitContainerSuperior.SplitterDistance = 412;
             this.splitContainerSuperior.TabIndex = 0;
             // 
@@ -278,7 +282,7 @@
             this.groupBoxInfoGeneral.ForeColor = System.Drawing.Color.Brown;
             this.groupBoxInfoGeneral.Location = new System.Drawing.Point(0, 0);
             this.groupBoxInfoGeneral.Name = "groupBoxInfoGeneral";
-            this.groupBoxInfoGeneral.Size = new System.Drawing.Size(412, 257);
+            this.groupBoxInfoGeneral.Size = new System.Drawing.Size(412, 241);
             this.groupBoxInfoGeneral.TabIndex = 0;
             this.groupBoxInfoGeneral.TabStop = false;
             this.groupBoxInfoGeneral.Text = "Información general";
@@ -366,6 +370,7 @@
             // 
             // groupBoxContactoP
             // 
+            this.groupBoxContactoP.Controls.Add(this.button1);
             this.groupBoxContactoP.Controls.Add(this.dateTimePickerCP);
             this.groupBoxContactoP.Controls.Add(this.textBoxCorreoCP);
             this.groupBoxContactoP.Controls.Add(this.textBoxTelCP);
@@ -380,10 +385,20 @@
             this.groupBoxContactoP.ForeColor = System.Drawing.Color.Brown;
             this.groupBoxContactoP.Location = new System.Drawing.Point(0, 0);
             this.groupBoxContactoP.Name = "groupBoxContactoP";
-            this.groupBoxContactoP.Size = new System.Drawing.Size(548, 257);
+            this.groupBoxContactoP.Size = new System.Drawing.Size(548, 241);
             this.groupBoxContactoP.TabIndex = 0;
             this.groupBoxContactoP.TabStop = false;
             this.groupBoxContactoP.Text = "Contacto principal";
+            // 
+            // button1
+            // 
+            this.button1.AutoSize = true;
+            this.button1.Location = new System.Drawing.Point(456, 27);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(26, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "...";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // dateTimePickerCP
             // 
@@ -435,7 +450,7 @@
             this.textBoxNombreCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNombreCP.Location = new System.Drawing.Point(137, 28);
             this.textBoxNombreCP.Name = "textBoxNombreCP";
-            this.textBoxNombreCP.Size = new System.Drawing.Size(390, 17);
+            this.textBoxNombreCP.Size = new System.Drawing.Size(313, 17);
             this.textBoxNombreCP.TabIndex = 5;
             this.textBoxNombreCP.Text = "Pepito";
             this.textBoxNombreCP.Enter += new System.EventHandler(this.TextBox_Enter);
@@ -493,14 +508,36 @@
             // 
             // groupBoxOtros
             // 
+            this.groupBoxOtros.Controls.Add(this.textBoxPendientes);
+            this.groupBoxOtros.Controls.Add(this.labelPendientes);
             this.groupBoxOtros.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBoxOtros.ForeColor = System.Drawing.Color.Brown;
             this.groupBoxOtros.Location = new System.Drawing.Point(0, 0);
             this.groupBoxOtros.Name = "groupBoxOtros";
-            this.groupBoxOtros.Size = new System.Drawing.Size(964, 104);
+            this.groupBoxOtros.Size = new System.Drawing.Size(964, 158);
             this.groupBoxOtros.TabIndex = 0;
             this.groupBoxOtros.TabStop = false;
             this.groupBoxOtros.Text = "Otros";
+            // 
+            // textBoxPendientes
+            // 
+            this.textBoxPendientes.Location = new System.Drawing.Point(6, 47);
+            this.textBoxPendientes.Multiline = true;
+            this.textBoxPendientes.Name = "textBoxPendientes";
+            this.textBoxPendientes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxPendientes.Size = new System.Drawing.Size(937, 95);
+            this.textBoxPendientes.TabIndex = 6;
+            // 
+            // labelPendientes
+            // 
+            this.labelPendientes.AutoSize = true;
+            this.labelPendientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPendientes.ForeColor = System.Drawing.Color.Brown;
+            this.labelPendientes.Location = new System.Drawing.Point(6, 26);
+            this.labelPendientes.Name = "labelPendientes";
+            this.labelPendientes.Size = new System.Drawing.Size(85, 18);
+            this.labelPendientes.TabIndex = 5;
+            this.labelPendientes.Text = "Pendientes:";
             // 
             // tabPageTareas
             // 
@@ -509,7 +546,7 @@
             this.tabPageTareas.Location = new System.Drawing.Point(4, 22);
             this.tabPageTareas.Name = "tabPageTareas";
             this.tabPageTareas.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTareas.Size = new System.Drawing.Size(970, 371);
+            this.tabPageTareas.Size = new System.Drawing.Size(970, 409);
             this.tabPageTareas.TabIndex = 1;
             this.tabPageTareas.Text = "Tareas";
             this.tabPageTareas.UseVisualStyleBackColor = true;
@@ -525,7 +562,7 @@
             this.tableLayoutTareas.Name = "tableLayoutTareas";
             this.tableLayoutTareas.RowCount = 1;
             this.tableLayoutTareas.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutTareas.Size = new System.Drawing.Size(940, 365);
+            this.tableLayoutTareas.Size = new System.Drawing.Size(940, 403);
             this.tableLayoutTareas.TabIndex = 1;
             // 
             // toolStrip1
@@ -540,7 +577,7 @@
             this.toolStripButtonMinimizarTodos});
             this.toolStrip1.Location = new System.Drawing.Point(3, 3);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(24, 365);
+            this.toolStrip1.Size = new System.Drawing.Size(24, 403);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -600,7 +637,7 @@
             this.tabPageContactos.Location = new System.Drawing.Point(4, 22);
             this.tabPageContactos.Name = "tabPageContactos";
             this.tabPageContactos.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageContactos.Size = new System.Drawing.Size(970, 371);
+            this.tabPageContactos.Size = new System.Drawing.Size(970, 409);
             this.tabPageContactos.TabIndex = 2;
             this.tabPageContactos.Text = "Contactos";
             this.tabPageContactos.UseVisualStyleBackColor = true;
@@ -615,7 +652,7 @@
             this.tableLayoutContactos.Name = "tableLayoutContactos";
             this.tableLayoutContactos.RowCount = 1;
             this.tableLayoutContactos.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutContactos.Size = new System.Drawing.Size(940, 365);
+            this.tableLayoutContactos.Size = new System.Drawing.Size(940, 403);
             this.tableLayoutContactos.TabIndex = 2;
             // 
             // toolStrip2
@@ -630,7 +667,7 @@
             this.toolStripButton4});
             this.toolStrip2.Location = new System.Drawing.Point(3, 3);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(24, 365);
+            this.toolStrip2.Size = new System.Drawing.Size(24, 403);
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -643,7 +680,7 @@
             this.toolStripButtonNuevoContacto.Name = "toolStripButtonNuevoContacto";
             this.toolStripButtonNuevoContacto.Size = new System.Drawing.Size(21, 23);
             this.toolStripButtonNuevoContacto.Text = "+";
-            this.toolStripButtonNuevoContacto.ToolTipText = "Añadir tarea";
+            this.toolStripButtonNuevoContacto.ToolTipText = "Añadir contacto";
             this.toolStripButtonNuevoContacto.Click += new System.EventHandler(this.NuevoContacto);
             // 
             // toolStripSeparator4
@@ -683,14 +720,14 @@
             this.toolStripButton4.Size = new System.Drawing.Size(21, 20);
             this.toolStripButton4.Text = "toolStripButton4";
             // 
-            // Cliente
+            // ClienteControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControlCliente);
             this.Controls.Add(this.toolStripCliente);
-            this.Name = "Cliente";
-            this.Size = new System.Drawing.Size(978, 422);
+            this.Name = "ClienteControl";
+            this.Size = new System.Drawing.Size(978, 460);
             this.toolStripCliente.ResumeLayout(false);
             this.toolStripCliente.PerformLayout();
             this.tabControlCliente.ResumeLayout(false);
@@ -707,6 +744,8 @@
             this.groupBoxInfoGeneral.PerformLayout();
             this.groupBoxContactoP.ResumeLayout(false);
             this.groupBoxContactoP.PerformLayout();
+            this.groupBoxOtros.ResumeLayout(false);
+            this.groupBoxOtros.PerformLayout();
             this.tabPageTareas.ResumeLayout(false);
             this.tabPageTareas.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -774,5 +813,8 @@
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.TextBox textBoxPendientes;
+        private System.Windows.Forms.Label labelPendientes;
+        private System.Windows.Forms.Button button1;
     }
 }

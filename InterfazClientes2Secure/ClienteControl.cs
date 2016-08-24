@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace InterfazClientes2Secure
 {
-    public partial class Cliente : UserControl
+    public partial class ClienteControl : UserControl
     {
 
         // ------------------------------------------------------------------
@@ -18,7 +18,7 @@ namespace InterfazClientes2Secure
         // ------------------------------------------------------------------
 
         // Tamaños para maximizar y minimizar
-        private const int ALTURA_ORIGINAL = 355;
+        private const int ALTURA_ORIGINAL = 470;
         private const int ALTURA_MINIMIZADO = 25;
 
         // Texto de los botones de cambio de estado
@@ -47,7 +47,7 @@ namespace InterfazClientes2Secure
         // ------------------------------------------------------------------
 
 
-        public Cliente()
+        public ClienteControl()
         {
             InitializeComponent();
             hayTareas = false;

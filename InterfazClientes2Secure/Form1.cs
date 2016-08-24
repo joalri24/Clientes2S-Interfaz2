@@ -48,7 +48,7 @@ namespace InterfazClientes2Secure
             else
                 tablaFondo.RowCount++;
 
-            tablaFondo.Controls.Add(new Cliente(), 0, tablaFondo.RowCount - 1);
+            tablaFondo.Controls.Add(new ClienteControl(), 0, tablaFondo.RowCount - 1);
             Console.WriteLine("Rows: " + tablaFondo.RowCount);
         }
     }
