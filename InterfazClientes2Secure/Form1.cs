@@ -63,6 +63,11 @@ namespace InterfazClientes2Secure
             if (dialogo.ShowDialog() == DialogResult.OK)
             {
                 TableLayoutPanel tablaFondo = tableLayoutClientes;
+
+                if (true)
+                {
+                    // TODO: Registrar info de contacto principal.
+                }
                 Cliente cliente = new Cliente(dialogo.darNombreCliente(), dialogo.darTipoAsociacion());
                 ClienteControl controlCliente = new ClienteControl(cliente);
 

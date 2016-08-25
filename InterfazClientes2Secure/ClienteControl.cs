@@ -72,7 +72,6 @@ namespace InterfazClientes2Secure
 
         }
 
-
         // ------------------------------------------------------------------
         // Métodos
         // ------------------------------------------------------------------
@@ -168,7 +167,7 @@ namespace InterfazClientes2Secure
         }
 
         /// <summary>
-        /// Elimina un cliente. Quita el control.
+        /// Elimina un cliente Después de que se muestra un dialogo de confirmación. Quita el control.
         /// TODO: El control se elimina pero la fila donde se encontraba 
         /// queda vacía. Se deben eliminar las filas vacías en algún momento.
         /// </summary>
@@ -176,7 +175,10 @@ namespace InterfazClientes2Secure
         /// <param name="e"></param>
         private void EliminarCliente(object sender, EventArgs e)
         {
-            this.Dispose();
+            Form dialogoConfirmacion = new FormEliminar(cliente.Nombre);
+            if (dialogoConfirmacion.ShowDialog() == DialogResult.OK)
+                this.Dispose();
+
         }
 
         /// <summary>
@@ -206,6 +208,8 @@ namespace InterfazClientes2Secure
         /// <param name="e"></param>
         private void NuevoContacto(object sender, EventArgs e)
         {
+            Contacto nuevo = new Contacto();
+
             TableLayoutPanel tablaFondo = tableLayoutContactos;
             if (!hayContactos)
                 hayContactos = true;
@@ -213,8 +217,6 @@ namespace InterfazClientes2Secure
                 tablaFondo.RowCount++;
 
             tablaFondo.Controls.Add(new ContactoControl(), 0, tablaFondo.RowCount - 1);
-            //tablaFondo.Controls.Add(new Label() { Text ="Tarea"}, 0, tablaFondo.RowCount - 1);
-            //Console.WriteLine("Rows: " + tablaFondo.RowCount);
         }
 
     }
