@@ -76,6 +76,8 @@ namespace InterfazClientes2Secure
                 textBoxCorreoCP.Text = cliente.ContactoPrincipal.Correo;
                 textBoxTelCP.Text = cliente.ContactoPrincipal.Telefono;
                 textBoxCargoCP.Text = cliente.ContactoPrincipal.Cargo;
+
+                AgregarContacto(cliente.ContactoPrincipal);
             }
 
         }
@@ -203,8 +205,6 @@ namespace InterfazClientes2Secure
                 tablaFondo.RowCount++;
 
             tablaFondo.Controls.Add(new TareaControl(), 0, tablaFondo.RowCount - 1);
-            //tablaFondo.Controls.Add(new Label() { Text ="Tarea"}, 0, tablaFondo.RowCount - 1);
-            //Console.WriteLine("Rows: " + tablaFondo.RowCount);
         }
 
         /// <summary>
@@ -213,18 +213,42 @@ namespace InterfazClientes2Secure
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void NuevoContacto(object sender, EventArgs e)
+        private void NuevoContacto_Click(object sender, EventArgs e)
         {
-            Contacto nuevo = new Contacto();
 
+            FormNuevoContacto dialogo = new FormNuevoContacto();
+
+            // Abre una ventana de dialogo para obtener la información del nuevo contacto.
+            if (dialogo.ShowDialog() == DialogResult.OK)
+            {
+                TableLayoutPanel tablaFondo = tableLayoutContactos;
+
+                Contacto contacto = new Contacto(dialogo.darNombre());
+                contacto.Cargo = dialogo.darCargo();
+                contacto.Correo = dialogo.darCorreo();
+                contacto.Telefono = dialogo.darTelefono();
+
+                AgregarContacto(contacto);
+            }
+        }
+
+        /// <summary>
+        /// Añade un nuevo contacto en el tablelayout de contactos.
+        /// Un contacto por fila.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void AgregarContacto(Contacto contacto)
+        {
             TableLayoutPanel tablaFondo = tableLayoutContactos;
             if (!hayContactos)
                 hayContactos = true;
             else
                 tablaFondo.RowCount++;
 
-            tablaFondo.Controls.Add(new ContactoControl(), 0, tablaFondo.RowCount - 1);
+            tablaFondo.Controls.Add(new ContactoControl(contacto), 0, tablaFondo.RowCount - 1);
         }
+
 
     }
 }

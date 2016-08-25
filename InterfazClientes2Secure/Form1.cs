@@ -74,7 +74,7 @@ namespace InterfazClientes2Secure
                     contacto.Correo = dialogo.darCorreoContactoPrincipal();
                     contacto.Telefono = dialogo.darTelefonoContactoPrincipal();
 
-                    cliente.ContactoPrincipal = contacto;
+                    cliente.ContactoPrincipal = contacto;                   
                 }
 
                 ClienteControl controlCliente = new ClienteControl(cliente);

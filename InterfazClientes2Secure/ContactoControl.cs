@@ -26,6 +26,9 @@ namespace InterfazClientes2Secure
         // Atributos
         // ------------------------------------------------------------------
 
+        private Contacto contacto;
+
+
         // ------------------------------------------------------------------
         // Constructor
         // ------------------------------------------------------------------
@@ -33,6 +36,21 @@ namespace InterfazClientes2Secure
         public ContactoControl()
         {
             InitializeComponent();
+            contacto = null;
+        }
+
+        public ContactoControl(Contacto contactoP)
+        {
+            InitializeComponent();
+            contacto = contactoP;
+
+            toolStripLabelContacto.Text = contacto.Nombre;
+            textBoxNombreContacto.Text = contacto.Nombre;
+            textBoxCargo.Text = contacto.Cargo;
+            textBoxTelefono.Text = contacto.Telefono;
+            textBoxCelular.Text = contacto.Celular;
+            textBoxCorreo.Text = contacto.Correo;
+
         }
 
 
@@ -73,7 +91,9 @@ namespace InterfazClientes2Secure
         /// <param name="e"></param>
         private void EliminarContacto(object sender, EventArgs e)
         {
-            this.Dispose();
+            Form dialogoConfirmacion = new FormEliminar(contacto.Nombre);
+            if (dialogoConfirmacion.ShowDialog() == DialogResult.OK)
+                this.Dispose();
         }
 
         /// <summary>
