@@ -1,41 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace InterfazClientes2Secure
 {
-    public partial class FormEliminar : Form
+    public class Tarea
     {
         // ------------------------------------------------------------------
         // Constantes
         // ------------------------------------------------------------------
-        private string MENSAJE_BASE = "¿Está seguro que desea eliminar el elemento \"";
+
         // ------------------------------------------------------------------
         // Atributos
         // ------------------------------------------------------------------
 
+        public string Nombre;
+        public string Descripcion;
+        public DateTime fecha;
 
 
         // ------------------------------------------------------------------
         // Constructores
         // ------------------------------------------------------------------
 
-        public FormEliminar()
+        public Tarea ()
         {
-            InitializeComponent();
+
         }
 
-        public FormEliminar(string elemento)
+        public Tarea(string nombre)
         {
-            InitializeComponent();
-            labelMensaje.Text = MENSAJE_BASE + elemento + "\"?";
-
+            Nombre = nombre;
         }
 
         // ------------------------------------------------------------------

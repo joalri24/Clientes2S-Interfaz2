@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.groupBoxInfo = new System.Windows.Forms.GroupBox();
-            this.groupBoxContacto = new System.Windows.Forms.GroupBox();
-            this.buttonCancelar = new System.Windows.Forms.Button();
-            this.buttonAceptar = new System.Windows.Forms.Button();
-            this.labelNombreCliente = new System.Windows.Forms.Label();
-            this.textBoxNombreCliente = new System.Windows.Forms.TextBox();
-            this.labelTipoAsociacion = new System.Windows.Forms.Label();
-            this.radioButtonDirecto = new System.Windows.Forms.RadioButton();
             this.radioButtonIntermediario = new System.Windows.Forms.RadioButton();
-            this.textBoxNombreContacto = new System.Windows.Forms.TextBox();
-            this.labelNombreContacto = new System.Windows.Forms.Label();
-            this.buttonSeleccionar = new System.Windows.Forms.Button();
-            this.textBoxCargo = new System.Windows.Forms.TextBox();
-            this.labelCargo = new System.Windows.Forms.Label();
-            this.textBoxTelefono = new System.Windows.Forms.TextBox();
-            this.labelTelefono = new System.Windows.Forms.Label();
+            this.radioButtonDirecto = new System.Windows.Forms.RadioButton();
+            this.labelTipoAsociacion = new System.Windows.Forms.Label();
+            this.textBoxNombreCliente = new System.Windows.Forms.TextBox();
+            this.labelNombreCliente = new System.Windows.Forms.Label();
+            this.groupBoxContacto = new System.Windows.Forms.GroupBox();
             this.textBoxCorreo = new System.Windows.Forms.TextBox();
             this.labelCorreo = new System.Windows.Forms.Label();
+            this.textBoxTelefono = new System.Windows.Forms.TextBox();
+            this.labelTelefono = new System.Windows.Forms.Label();
+            this.textBoxCargo = new System.Windows.Forms.TextBox();
+            this.labelCargo = new System.Windows.Forms.Label();
+            this.buttonSeleccionar = new System.Windows.Forms.Button();
+            this.textBoxNombreContacto = new System.Windows.Forms.TextBox();
+            this.labelNombreContacto = new System.Windows.Forms.Label();
+            this.buttonCancelar = new System.Windows.Forms.Button();
+            this.buttonAceptar = new System.Windows.Forms.Button();
             this.groupBoxInfo.SuspendLayout();
             this.groupBoxContacto.SuspendLayout();
             this.SuspendLayout();
@@ -64,6 +64,61 @@
             this.groupBoxInfo.TabIndex = 0;
             this.groupBoxInfo.TabStop = false;
             this.groupBoxInfo.Text = "Información Empresa";
+            // 
+            // radioButtonIntermediario
+            // 
+            this.radioButtonIntermediario.AutoSize = true;
+            this.radioButtonIntermediario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonIntermediario.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.radioButtonIntermediario.Location = new System.Drawing.Point(122, 118);
+            this.radioButtonIntermediario.Name = "radioButtonIntermediario";
+            this.radioButtonIntermediario.Size = new System.Drawing.Size(134, 21);
+            this.radioButtonIntermediario.TabIndex = 4;
+            this.radioButtonIntermediario.Text = "Por intermediario";
+            this.radioButtonIntermediario.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDirecto
+            // 
+            this.radioButtonDirecto.AutoSize = true;
+            this.radioButtonDirecto.Checked = true;
+            this.radioButtonDirecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonDirecto.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.radioButtonDirecto.Location = new System.Drawing.Point(10, 118);
+            this.radioButtonDirecto.Name = "radioButtonDirecto";
+            this.radioButtonDirecto.Size = new System.Drawing.Size(71, 21);
+            this.radioButtonDirecto.TabIndex = 3;
+            this.radioButtonDirecto.TabStop = true;
+            this.radioButtonDirecto.Text = "Directo";
+            this.radioButtonDirecto.UseVisualStyleBackColor = true;
+            // 
+            // labelTipoAsociacion
+            // 
+            this.labelTipoAsociacion.AutoSize = true;
+            this.labelTipoAsociacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTipoAsociacion.Location = new System.Drawing.Point(7, 89);
+            this.labelTipoAsociacion.Name = "labelTipoAsociacion";
+            this.labelTipoAsociacion.Size = new System.Drawing.Size(137, 18);
+            this.labelTipoAsociacion.TabIndex = 2;
+            this.labelTipoAsociacion.Text = "Tipo de asociación:";
+            // 
+            // textBoxNombreCliente
+            // 
+            this.textBoxNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNombreCliente.Location = new System.Drawing.Point(79, 30);
+            this.textBoxNombreCliente.Name = "textBoxNombreCliente";
+            this.textBoxNombreCliente.Size = new System.Drawing.Size(260, 24);
+            this.textBoxNombreCliente.TabIndex = 1;
+            this.textBoxNombreCliente.TextChanged += new System.EventHandler(this.textBoxNombreCliente_TextChanged);
+            // 
+            // labelNombreCliente
+            // 
+            this.labelNombreCliente.AutoSize = true;
+            this.labelNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNombreCliente.Location = new System.Drawing.Point(7, 33);
+            this.labelNombreCliente.Name = "labelNombreCliente";
+            this.labelNombreCliente.Size = new System.Drawing.Size(66, 18);
+            this.labelNombreCliente.TabIndex = 0;
+            this.labelNombreCliente.Text = "Nombre:";
             // 
             // groupBoxContacto
             // 
@@ -84,124 +139,23 @@
             this.groupBoxContacto.TabStop = false;
             this.groupBoxContacto.Text = "Contacto Principal (opcional)";
             // 
-            // buttonCancelar
+            // textBoxCorreo
             // 
-            this.buttonCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancelar.Location = new System.Drawing.Point(638, 184);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(75, 23);
-            this.buttonCancelar.TabIndex = 2;
-            this.buttonCancelar.Text = "Cancelar";
-            this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.textBoxCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCorreo.Location = new System.Drawing.Point(82, 118);
+            this.textBoxCorreo.Name = "textBoxCorreo";
+            this.textBoxCorreo.Size = new System.Drawing.Size(232, 24);
+            this.textBoxCorreo.TabIndex = 10;
             // 
-            // buttonAceptar
+            // labelCorreo
             // 
-            this.buttonAceptar.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonAceptar.Enabled = false;
-            this.buttonAceptar.Location = new System.Drawing.Point(557, 184);
-            this.buttonAceptar.Name = "buttonAceptar";
-            this.buttonAceptar.Size = new System.Drawing.Size(75, 23);
-            this.buttonAceptar.TabIndex = 3;
-            this.buttonAceptar.Text = "Aceptar";
-            this.buttonAceptar.UseVisualStyleBackColor = true;
-            // 
-            // labelNombreCliente
-            // 
-            this.labelNombreCliente.AutoSize = true;
-            this.labelNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNombreCliente.Location = new System.Drawing.Point(7, 33);
-            this.labelNombreCliente.Name = "labelNombreCliente";
-            this.labelNombreCliente.Size = new System.Drawing.Size(66, 18);
-            this.labelNombreCliente.TabIndex = 0;
-            this.labelNombreCliente.Text = "Nombre:";
-            // 
-            // textBoxNombreCliente
-            // 
-            this.textBoxNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNombreCliente.Location = new System.Drawing.Point(79, 30);
-            this.textBoxNombreCliente.Name = "textBoxNombreCliente";
-            this.textBoxNombreCliente.Size = new System.Drawing.Size(260, 24);
-            this.textBoxNombreCliente.TabIndex = 1;
-            this.textBoxNombreCliente.TextChanged += new System.EventHandler(this.textBoxNombreCliente_TextChanged);
-            // 
-            // labelTipoAsociacion
-            // 
-            this.labelTipoAsociacion.AutoSize = true;
-            this.labelTipoAsociacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTipoAsociacion.Location = new System.Drawing.Point(7, 89);
-            this.labelTipoAsociacion.Name = "labelTipoAsociacion";
-            this.labelTipoAsociacion.Size = new System.Drawing.Size(137, 18);
-            this.labelTipoAsociacion.TabIndex = 2;
-            this.labelTipoAsociacion.Text = "Tipo de asociación:";
-            // 
-            // radioButtonDirecto
-            // 
-            this.radioButtonDirecto.AutoSize = true;
-            this.radioButtonDirecto.Checked = true;
-            this.radioButtonDirecto.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.radioButtonDirecto.Location = new System.Drawing.Point(10, 118);
-            this.radioButtonDirecto.Name = "radioButtonDirecto";
-            this.radioButtonDirecto.Size = new System.Drawing.Size(59, 17);
-            this.radioButtonDirecto.TabIndex = 3;
-            this.radioButtonDirecto.TabStop = true;
-            this.radioButtonDirecto.Text = "Directo";
-            this.radioButtonDirecto.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonIntermediario
-            // 
-            this.radioButtonIntermediario.AutoSize = true;
-            this.radioButtonIntermediario.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.radioButtonIntermediario.Location = new System.Drawing.Point(122, 118);
-            this.radioButtonIntermediario.Name = "radioButtonIntermediario";
-            this.radioButtonIntermediario.Size = new System.Drawing.Size(103, 17);
-            this.radioButtonIntermediario.TabIndex = 4;
-            this.radioButtonIntermediario.Text = "Por intermediario";
-            this.radioButtonIntermediario.UseVisualStyleBackColor = true;
-            // 
-            // textBoxNombreContacto
-            // 
-            this.textBoxNombreContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNombreContacto.Location = new System.Drawing.Point(82, 30);
-            this.textBoxNombreContacto.Name = "textBoxNombreContacto";
-            this.textBoxNombreContacto.Size = new System.Drawing.Size(232, 24);
-            this.textBoxNombreContacto.TabIndex = 3;
-            // 
-            // labelNombreContacto
-            // 
-            this.labelNombreContacto.AutoSize = true;
-            this.labelNombreContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNombreContacto.Location = new System.Drawing.Point(6, 33);
-            this.labelNombreContacto.Name = "labelNombreContacto";
-            this.labelNombreContacto.Size = new System.Drawing.Size(66, 18);
-            this.labelNombreContacto.TabIndex = 2;
-            this.labelNombreContacto.Text = "Nombre:";
-            // 
-            // buttonSeleccionar
-            // 
-            this.buttonSeleccionar.Location = new System.Drawing.Point(320, 30);
-            this.buttonSeleccionar.Name = "buttonSeleccionar";
-            this.buttonSeleccionar.Size = new System.Drawing.Size(25, 25);
-            this.buttonSeleccionar.TabIndex = 4;
-            this.buttonSeleccionar.Text = "...";
-            this.buttonSeleccionar.UseVisualStyleBackColor = true;
-            // 
-            // textBoxCargo
-            // 
-            this.textBoxCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCargo.Location = new System.Drawing.Point(82, 60);
-            this.textBoxCargo.Name = "textBoxCargo";
-            this.textBoxCargo.Size = new System.Drawing.Size(232, 24);
-            this.textBoxCargo.TabIndex = 6;
-            // 
-            // labelCargo
-            // 
-            this.labelCargo.AutoSize = true;
-            this.labelCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCargo.Location = new System.Drawing.Point(6, 63);
-            this.labelCargo.Name = "labelCargo";
-            this.labelCargo.Size = new System.Drawing.Size(53, 18);
-            this.labelCargo.TabIndex = 5;
-            this.labelCargo.Text = "Cargo:";
+            this.labelCorreo.AutoSize = true;
+            this.labelCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCorreo.Location = new System.Drawing.Point(6, 121);
+            this.labelCorreo.Name = "labelCorreo";
+            this.labelCorreo.Size = new System.Drawing.Size(59, 18);
+            this.labelCorreo.TabIndex = 9;
+            this.labelCorreo.Text = "Correo:";
             // 
             // textBoxTelefono
             // 
@@ -221,23 +175,71 @@
             this.labelTelefono.TabIndex = 7;
             this.labelTelefono.Text = "Télefono:";
             // 
-            // textBoxCorreo
+            // textBoxCargo
             // 
-            this.textBoxCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCorreo.Location = new System.Drawing.Point(82, 118);
-            this.textBoxCorreo.Name = "textBoxCorreo";
-            this.textBoxCorreo.Size = new System.Drawing.Size(232, 24);
-            this.textBoxCorreo.TabIndex = 10;
+            this.textBoxCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCargo.Location = new System.Drawing.Point(82, 60);
+            this.textBoxCargo.Name = "textBoxCargo";
+            this.textBoxCargo.Size = new System.Drawing.Size(232, 24);
+            this.textBoxCargo.TabIndex = 6;
             // 
-            // labelCorreo
+            // labelCargo
             // 
-            this.labelCorreo.AutoSize = true;
-            this.labelCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCorreo.Location = new System.Drawing.Point(6, 121);
-            this.labelCorreo.Name = "labelCorreo";
-            this.labelCorreo.Size = new System.Drawing.Size(59, 18);
-            this.labelCorreo.TabIndex = 9;
-            this.labelCorreo.Text = "Correo:";
+            this.labelCargo.AutoSize = true;
+            this.labelCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCargo.Location = new System.Drawing.Point(6, 63);
+            this.labelCargo.Name = "labelCargo";
+            this.labelCargo.Size = new System.Drawing.Size(53, 18);
+            this.labelCargo.TabIndex = 5;
+            this.labelCargo.Text = "Cargo:";
+            // 
+            // buttonSeleccionar
+            // 
+            this.buttonSeleccionar.Location = new System.Drawing.Point(320, 30);
+            this.buttonSeleccionar.Name = "buttonSeleccionar";
+            this.buttonSeleccionar.Size = new System.Drawing.Size(25, 25);
+            this.buttonSeleccionar.TabIndex = 4;
+            this.buttonSeleccionar.Text = "...";
+            this.buttonSeleccionar.UseVisualStyleBackColor = true;
+            // 
+            // textBoxNombreContacto
+            // 
+            this.textBoxNombreContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNombreContacto.Location = new System.Drawing.Point(82, 30);
+            this.textBoxNombreContacto.Name = "textBoxNombreContacto";
+            this.textBoxNombreContacto.Size = new System.Drawing.Size(232, 24);
+            this.textBoxNombreContacto.TabIndex = 3;
+            // 
+            // labelNombreContacto
+            // 
+            this.labelNombreContacto.AutoSize = true;
+            this.labelNombreContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNombreContacto.Location = new System.Drawing.Point(6, 33);
+            this.labelNombreContacto.Name = "labelNombreContacto";
+            this.labelNombreContacto.Size = new System.Drawing.Size(66, 18);
+            this.labelNombreContacto.TabIndex = 2;
+            this.labelNombreContacto.Text = "Nombre:";
+            // 
+            // buttonCancelar
+            // 
+            this.buttonCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.buttonCancelar.Location = new System.Drawing.Point(638, 184);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancelar.TabIndex = 3;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.UseVisualStyleBackColor = true;
+            // 
+            // buttonAceptar
+            // 
+            this.buttonAceptar.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.buttonAceptar.Enabled = false;
+            this.buttonAceptar.Location = new System.Drawing.Point(557, 184);
+            this.buttonAceptar.Name = "buttonAceptar";
+            this.buttonAceptar.Size = new System.Drawing.Size(75, 23);
+            this.buttonAceptar.TabIndex = 2;
+            this.buttonAceptar.Text = "Aceptar";
+            this.buttonAceptar.UseVisualStyleBackColor = true;
             // 
             // FormNuevoCliente
             // 

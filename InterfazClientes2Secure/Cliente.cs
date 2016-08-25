@@ -27,7 +27,7 @@ namespace InterfazClientes2Secure
         public bool HacerSeguimiento;
 
         public Contacto ContactoPrincipal;
-        // TODO: lista de tareas
+        private IList<Tarea> tareas;
         private IList<Contacto> contactos;
 
 
@@ -48,6 +48,7 @@ namespace InterfazClientes2Secure
             Pendientes = "";
             HacerSeguimiento = true;
             contactos = new List<Contacto>();
+            tareas = new List<Tarea>();
             ContactoPrincipal = null;
         }
 
@@ -64,6 +65,7 @@ namespace InterfazClientes2Secure
             Pendientes = "";
             HacerSeguimiento = true;
             contactos = new List<Contacto>();
+            tareas = new List<Tarea>();
             ContactoPrincipal = null;
         }
 
