@@ -70,6 +70,14 @@ namespace InterfazClientes2Secure
             comboBoxTipoAsociacion.Text = cliente.TipoAsociación;
             checkBoxSeguimiento.Checked = cliente.HacerSeguimiento;
 
+            if (clienteP.ContactoPrincipal != null)
+            {
+                textBoxNombreCP.Text = cliente.ContactoPrincipal.Nombre;
+                textBoxCorreoCP.Text = cliente.ContactoPrincipal.Correo;
+                textBoxTelCP.Text = cliente.ContactoPrincipal.Telefono;
+                textBoxCargoCP.Text = cliente.ContactoPrincipal.Cargo;
+            }
+
         }
 
         // ------------------------------------------------------------------

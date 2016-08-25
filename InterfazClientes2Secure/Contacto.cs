@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterfazClientes2Secure
 {
-    class Contacto
+    public class Contacto
     {
         // ------------------------------------------------------------------
         // Constantes
@@ -32,7 +32,23 @@ namespace InterfazClientes2Secure
         public Contacto()
         {
             UltimoContacto = DateTime.Now;
-            Console.WriteLine(UltimoContacto);
+            Nombre = "Nuevo contacto";
+            Cargo = "";
+            Telefono = "";
+            Celular = "";
+            Correo = "";
+            Notas = "";
+        }
+
+        public Contacto(string nombre)
+        {
+            UltimoContacto = DateTime.Now;
+            Nombre = nombre;
+            Cargo = "";
+            Telefono = "";
+            Celular = "";
+            Correo = "";
+            Notas = "";
         }
 
         // ------------------------------------------------------------------

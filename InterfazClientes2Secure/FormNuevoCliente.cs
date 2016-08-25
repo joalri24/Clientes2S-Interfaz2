@@ -34,13 +34,20 @@ namespace InterfazClientes2Secure
         {
             buttonAceptar.Enabled = (textBoxNombreCliente.Text == "")? false:true; 
         }
-
-        public String darNombreCliente()
+        /// <summary>
+        /// Retorna el nombre del cliente.
+        /// </summary>
+        /// <returns></returns>
+        public string darNombreCliente()
         {
             return textBoxNombreCliente.Text;
         }
 
-        public String darTipoAsociacion()
+        /// <summary>
+        /// Retorna el tipo de asociación con el cliente.
+        /// </summary>
+        /// <returns></returns>
+        public string darTipoAsociacion()
         {
             string respuesta = "Directo";
 
@@ -48,6 +55,42 @@ namespace InterfazClientes2Secure
                 respuesta = radioButtonIntermediario.Text;
 
             return respuesta;
+        }
+
+        /// <summary>
+        /// Retorna el nombre del contacto principal.
+        /// </summary>
+        /// <returns></returns>
+        public string darNombreContactoPrincipal()
+        {
+            return textBoxNombreContacto.Text;
+        }
+
+        /// <summary>
+        /// Retorna el cargo del contacto principal.
+        /// </summary>
+        /// <returns></returns>
+        public string darCargoContactoPrincipal()
+        {
+            return textBoxCargo.Text;
+        }
+
+        /// <summary>
+        /// Retorna el teléfono del contacto principal.
+        /// </summary>
+        /// <returns></returns>
+        public string darTelefonoContactoPrincipal()
+        {
+            return textBoxTelefono.Text;
+        }
+
+        /// <summary>
+        /// Retorna el correo del principal.
+        /// </summary>
+        /// <returns></returns>
+        public string darCorreoContactoPrincipal()
+        {
+            return textBoxCorreo.Text;
         }
 
     }

@@ -64,11 +64,19 @@ namespace InterfazClientes2Secure
             {
                 TableLayoutPanel tablaFondo = tableLayoutClientes;
 
-                if (true)
-                {
-                    // TODO: Registrar info de contacto principal.
-                }
                 Cliente cliente = new Cliente(dialogo.darNombreCliente(), dialogo.darTipoAsociacion());
+
+                // Registra el contacto principal si se rellenaron los campos correspondientes.
+                if (dialogo.darNombreContactoPrincipal() != "")
+                {
+                    Contacto contacto = new Contacto(dialogo.darNombreContactoPrincipal());
+                    contacto.Cargo = dialogo.darCargoContactoPrincipal();
+                    contacto.Correo = dialogo.darCorreoContactoPrincipal();
+                    contacto.Telefono = dialogo.darTelefonoContactoPrincipal();
+
+                    cliente.ContactoPrincipal = contacto;
+                }
+
                 ClienteControl controlCliente = new ClienteControl(cliente);
 
                 // La sentencia if es para que no se cree una nueva fila si exiten filas vacías
