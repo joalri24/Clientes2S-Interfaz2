@@ -116,8 +116,7 @@ namespace InterfazClientes2Secure
         /// <param name="e"></param>
         private void TextBox_Enter(object sender, EventArgs e)
         {
-            TextBox textbox = sender as TextBox;
-            textbox.BorderStyle = BorderStyle.Fixed3D;
+
         }
 
         /// <summary>

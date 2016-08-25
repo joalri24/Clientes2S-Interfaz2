@@ -357,17 +357,14 @@
             // 
             // textBoxNombreCliente
             // 
-            this.textBoxNombreCliente.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNombreCliente.ForeColor = System.Drawing.Color.Brown;
             this.textBoxNombreCliente.Location = new System.Drawing.Point(9, 28);
             this.textBoxNombreCliente.Name = "textBoxNombreCliente";
-            this.textBoxNombreCliente.Size = new System.Drawing.Size(385, 22);
+            this.textBoxNombreCliente.Size = new System.Drawing.Size(385, 29);
             this.textBoxNombreCliente.TabIndex = 0;
             this.textBoxNombreCliente.Text = "Stable Tec";
             this.textBoxNombreCliente.TextChanged += new System.EventHandler(this.textBoxNombreCliente_TextChanged);
-            this.textBoxNombreCliente.Enter += new System.EventHandler(this.TextBox_Enter);
-            this.textBoxNombreCliente.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // groupBoxContactoP
             // 
@@ -411,47 +408,35 @@
             // 
             // textBoxCorreoCP
             // 
-            this.textBoxCorreoCP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxCorreoCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCorreoCP.Location = new System.Drawing.Point(137, 94);
             this.textBoxCorreoCP.Name = "textBoxCorreoCP";
-            this.textBoxCorreoCP.Size = new System.Drawing.Size(390, 17);
+            this.textBoxCorreoCP.Size = new System.Drawing.Size(313, 24);
             this.textBoxCorreoCP.TabIndex = 8;
-            this.textBoxCorreoCP.Enter += new System.EventHandler(this.TextBox_Enter);
-            this.textBoxCorreoCP.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // textBoxTelCP
             // 
-            this.textBoxTelCP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTelCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTelCP.Location = new System.Drawing.Point(137, 72);
             this.textBoxTelCP.Name = "textBoxTelCP";
-            this.textBoxTelCP.Size = new System.Drawing.Size(390, 17);
+            this.textBoxTelCP.Size = new System.Drawing.Size(313, 24);
             this.textBoxTelCP.TabIndex = 7;
-            this.textBoxTelCP.Enter += new System.EventHandler(this.TextBox_Enter);
-            this.textBoxTelCP.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // textBoxCargoCP
             // 
-            this.textBoxCargoCP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxCargoCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCargoCP.Location = new System.Drawing.Point(137, 51);
             this.textBoxCargoCP.Name = "textBoxCargoCP";
-            this.textBoxCargoCP.Size = new System.Drawing.Size(390, 17);
+            this.textBoxCargoCP.Size = new System.Drawing.Size(313, 24);
             this.textBoxCargoCP.TabIndex = 6;
-            this.textBoxCargoCP.Enter += new System.EventHandler(this.TextBox_Enter);
-            this.textBoxCargoCP.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // textBoxNombreCP
             // 
-            this.textBoxNombreCP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxNombreCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNombreCP.Location = new System.Drawing.Point(137, 28);
             this.textBoxNombreCP.Name = "textBoxNombreCP";
-            this.textBoxNombreCP.Size = new System.Drawing.Size(313, 17);
+            this.textBoxNombreCP.Size = new System.Drawing.Size(313, 24);
             this.textBoxNombreCP.TabIndex = 5;
-            this.textBoxNombreCP.Enter += new System.EventHandler(this.TextBox_Enter);
-            this.textBoxNombreCP.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // labelUltimoContacto
             // 
