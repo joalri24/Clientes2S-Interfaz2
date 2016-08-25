@@ -143,15 +143,12 @@
             // 
             // textBoxCorreo
             // 
-            this.textBoxCorreo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCorreo.Location = new System.Drawing.Point(89, 130);
             this.textBoxCorreo.Name = "textBoxCorreo";
-            this.textBoxCorreo.Size = new System.Drawing.Size(330, 17);
+            this.textBoxCorreo.Size = new System.Drawing.Size(330, 24);
             this.textBoxCorreo.TabIndex = 9;
             this.textBoxCorreo.Text = "ra.pepito@stable.org";
-            this.textBoxCorreo.Enter += new System.EventHandler(this.TextBox_Enter);
-            this.textBoxCorreo.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // labelCorreoContacto
             // 
@@ -165,15 +162,12 @@
             // 
             // textBoxCelular
             // 
-            this.textBoxCelular.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxCelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCelular.Location = new System.Drawing.Point(89, 106);
             this.textBoxCelular.Name = "textBoxCelular";
-            this.textBoxCelular.Size = new System.Drawing.Size(330, 17);
+            this.textBoxCelular.Size = new System.Drawing.Size(330, 24);
             this.textBoxCelular.TabIndex = 7;
             this.textBoxCelular.Text = "99-999-99";
-            this.textBoxCelular.Enter += new System.EventHandler(this.TextBox_Enter);
-            this.textBoxCelular.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // labelCelularContacto
             // 
@@ -187,15 +181,12 @@
             // 
             // textBoxTelefono
             // 
-            this.textBoxTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTelefono.Location = new System.Drawing.Point(89, 82);
             this.textBoxTelefono.Name = "textBoxTelefono";
-            this.textBoxTelefono.Size = new System.Drawing.Size(330, 17);
+            this.textBoxTelefono.Size = new System.Drawing.Size(330, 24);
             this.textBoxTelefono.TabIndex = 5;
             this.textBoxTelefono.Text = "9999999";
-            this.textBoxTelefono.Enter += new System.EventHandler(this.TextBox_Enter);
-            this.textBoxTelefono.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // labelTelefonoContacto
             // 
@@ -209,15 +200,12 @@
             // 
             // textBoxCargo
             // 
-            this.textBoxCargo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCargo.Location = new System.Drawing.Point(89, 55);
             this.textBoxCargo.Name = "textBoxCargo";
-            this.textBoxCargo.Size = new System.Drawing.Size(330, 17);
+            this.textBoxCargo.Size = new System.Drawing.Size(330, 24);
             this.textBoxCargo.TabIndex = 3;
             this.textBoxCargo.Text = "Lider Desarrollo";
-            this.textBoxCargo.Enter += new System.EventHandler(this.TextBox_Enter);
-            this.textBoxCargo.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // labelCargoContacto
             // 
@@ -231,16 +219,13 @@
             // 
             // textBoxNombreContacto
             // 
-            this.textBoxNombreContacto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxNombreContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNombreContacto.Location = new System.Drawing.Point(89, 28);
             this.textBoxNombreContacto.Name = "textBoxNombreContacto";
-            this.textBoxNombreContacto.Size = new System.Drawing.Size(330, 17);
+            this.textBoxNombreContacto.Size = new System.Drawing.Size(330, 24);
             this.textBoxNombreContacto.TabIndex = 1;
             this.textBoxNombreContacto.Text = "Juan Ramírez Pérez";
             this.textBoxNombreContacto.TextChanged += new System.EventHandler(this.textBoxNombreContacto_TextChanged);
-            this.textBoxNombreContacto.Enter += new System.EventHandler(this.TextBox_Enter);
-            this.textBoxNombreContacto.Leave += new System.EventHandler(this.TextBox_Leave);
             // 
             // labelNombreContacto
             // 
@@ -287,6 +272,7 @@
             // 
             // textBoxNotasContacto
             // 
+            this.textBoxNotasContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNotasContacto.Location = new System.Drawing.Point(9, 79);
             this.textBoxNotasContacto.Multiline = true;
             this.textBoxNotasContacto.Name = "textBoxNotasContacto";
