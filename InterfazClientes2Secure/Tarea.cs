@@ -11,6 +11,10 @@ namespace InterfazClientes2Secure
         // ------------------------------------------------------------------
         // Constantes
         // ------------------------------------------------------------------
+        private const string URGENTE = "Urgente";
+        private const string ATENCION = "Atención";
+        private const string NORMAL = "Normal";
+        private const string FINALIZADA = "Finalizada";
 
         // ------------------------------------------------------------------
         // Atributos
@@ -18,7 +22,10 @@ namespace InterfazClientes2Secure
 
         public string Nombre;
         public string Descripcion;
-        public DateTime fecha;
+        public DateTime Fecha;
+        public string Estado;
+
+        //TODO Contacto encargado
 
 
         // ------------------------------------------------------------------
@@ -27,12 +34,18 @@ namespace InterfazClientes2Secure
 
         public Tarea ()
         {
-
+            Nombre = "Nueva tarea";
+            Descripcion = "";
+            Estado = NORMAL;
+            Fecha = DateTime.Now;
         }
 
         public Tarea(string nombre)
         {
             Nombre = nombre;
+            Estado = NORMAL;
+            Descripcion = "";
+            Fecha = DateTime.Now;
         }
 
         // ------------------------------------------------------------------

@@ -46,6 +46,7 @@
             this.labelNombreContacto = new System.Windows.Forms.Label();
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.buttonAceptar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBoxInfo.SuspendLayout();
             this.groupBoxContacto.SuspendLayout();
             this.SuspendLayout();
@@ -73,7 +74,7 @@
             this.radioButtonIntermediario.Location = new System.Drawing.Point(122, 118);
             this.radioButtonIntermediario.Name = "radioButtonIntermediario";
             this.radioButtonIntermediario.Size = new System.Drawing.Size(134, 21);
-            this.radioButtonIntermediario.TabIndex = 4;
+            this.radioButtonIntermediario.TabIndex = 3;
             this.radioButtonIntermediario.Text = "Por intermediario";
             this.radioButtonIntermediario.UseVisualStyleBackColor = true;
             // 
@@ -86,7 +87,7 @@
             this.radioButtonDirecto.Location = new System.Drawing.Point(10, 118);
             this.radioButtonDirecto.Name = "radioButtonDirecto";
             this.radioButtonDirecto.Size = new System.Drawing.Size(71, 21);
-            this.radioButtonDirecto.TabIndex = 3;
+            this.radioButtonDirecto.TabIndex = 2;
             this.radioButtonDirecto.TabStop = true;
             this.radioButtonDirecto.Text = "Directo";
             this.radioButtonDirecto.UseVisualStyleBackColor = true;
@@ -97,16 +98,16 @@
             this.labelTipoAsociacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTipoAsociacion.Location = new System.Drawing.Point(7, 89);
             this.labelTipoAsociacion.Name = "labelTipoAsociacion";
-            this.labelTipoAsociacion.Size = new System.Drawing.Size(137, 18);
+            this.labelTipoAsociacion.Size = new System.Drawing.Size(147, 18);
             this.labelTipoAsociacion.TabIndex = 2;
-            this.labelTipoAsociacion.Text = "Tipo de asociación:";
+            this.labelTipoAsociacion.Text = "Tipo de asociación: *";
             // 
             // textBoxNombreCliente
             // 
             this.textBoxNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNombreCliente.Location = new System.Drawing.Point(79, 30);
+            this.textBoxNombreCliente.Location = new System.Drawing.Point(89, 30);
             this.textBoxNombreCliente.Name = "textBoxNombreCliente";
-            this.textBoxNombreCliente.Size = new System.Drawing.Size(260, 24);
+            this.textBoxNombreCliente.Size = new System.Drawing.Size(250, 24);
             this.textBoxNombreCliente.TabIndex = 1;
             this.textBoxNombreCliente.TextChanged += new System.EventHandler(this.textBoxNombreCliente_TextChanged);
             // 
@@ -116,9 +117,9 @@
             this.labelNombreCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNombreCliente.Location = new System.Drawing.Point(7, 33);
             this.labelNombreCliente.Name = "labelNombreCliente";
-            this.labelNombreCliente.Size = new System.Drawing.Size(66, 18);
+            this.labelNombreCliente.Size = new System.Drawing.Size(76, 18);
             this.labelNombreCliente.TabIndex = 0;
-            this.labelNombreCliente.Text = "Nombre:";
+            this.labelNombreCliente.Text = "Nombre: *";
             // 
             // groupBoxContacto
             // 
@@ -163,7 +164,7 @@
             this.textBoxTelefono.Location = new System.Drawing.Point(82, 89);
             this.textBoxTelefono.Name = "textBoxTelefono";
             this.textBoxTelefono.Size = new System.Drawing.Size(232, 24);
-            this.textBoxTelefono.TabIndex = 8;
+            this.textBoxTelefono.TabIndex = 9;
             // 
             // labelTelefono
             // 
@@ -181,7 +182,7 @@
             this.textBoxCargo.Location = new System.Drawing.Point(82, 60);
             this.textBoxCargo.Name = "textBoxCargo";
             this.textBoxCargo.Size = new System.Drawing.Size(232, 24);
-            this.textBoxCargo.TabIndex = 6;
+            this.textBoxCargo.TabIndex = 8;
             // 
             // labelCargo
             // 
@@ -198,7 +199,7 @@
             this.buttonSeleccionar.Location = new System.Drawing.Point(320, 30);
             this.buttonSeleccionar.Name = "buttonSeleccionar";
             this.buttonSeleccionar.Size = new System.Drawing.Size(25, 25);
-            this.buttonSeleccionar.TabIndex = 4;
+            this.buttonSeleccionar.TabIndex = 6;
             this.buttonSeleccionar.Text = "...";
             this.buttonSeleccionar.UseVisualStyleBackColor = true;
             // 
@@ -208,7 +209,7 @@
             this.textBoxNombreContacto.Location = new System.Drawing.Point(82, 30);
             this.textBoxNombreContacto.Name = "textBoxNombreContacto";
             this.textBoxNombreContacto.Size = new System.Drawing.Size(232, 24);
-            this.textBoxNombreContacto.TabIndex = 3;
+            this.textBoxNombreContacto.TabIndex = 7;
             // 
             // labelNombreContacto
             // 
@@ -226,7 +227,7 @@
             this.buttonCancelar.Location = new System.Drawing.Point(638, 184);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(75, 23);
-            this.buttonCancelar.TabIndex = 3;
+            this.buttonCancelar.TabIndex = 5;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
             // 
@@ -237,15 +238,25 @@
             this.buttonAceptar.Location = new System.Drawing.Point(557, 184);
             this.buttonAceptar.Name = "buttonAceptar";
             this.buttonAceptar.Size = new System.Drawing.Size(75, 23);
-            this.buttonAceptar.TabIndex = 2;
+            this.buttonAceptar.TabIndex = 4;
             this.buttonAceptar.Text = "Aceptar";
             this.buttonAceptar.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(19, 189);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(101, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "*  Campo obligatorio";
             // 
             // FormNuevoCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(724, 216);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonAceptar);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.groupBoxContacto);
@@ -257,6 +268,7 @@
             this.groupBoxContacto.ResumeLayout(false);
             this.groupBoxContacto.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -280,5 +292,6 @@
         private System.Windows.Forms.Button buttonSeleccionar;
         private System.Windows.Forms.TextBox textBoxNombreContacto;
         private System.Windows.Forms.Label labelNombreContacto;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -61,6 +61,7 @@
             this.labelTareaContactoCargo = new System.Windows.Forms.Label();
             this.textBoxTareaNombreContacto = new System.Windows.Forms.TextBox();
             this.labelTareaNombreContacto = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.toolStripTarea.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerTarea)).BeginInit();
             this.splitContainerTarea.Panel1.SuspendLayout();
@@ -342,6 +343,7 @@
             // 
             // groupBoxTareaContacto
             // 
+            this.groupBoxTareaContacto.Controls.Add(this.button1);
             this.groupBoxTareaContacto.Controls.Add(this.textBoxTareaCorreoContacto);
             this.groupBoxTareaContacto.Controls.Add(this.labelTareaContactoCorreo);
             this.groupBoxTareaContacto.Controls.Add(this.textBoxTareaTelContacto);
@@ -361,12 +363,13 @@
             // 
             // textBoxTareaCorreoContacto
             // 
+            this.textBoxTareaCorreoContacto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTareaCorreoContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTareaCorreoContacto.Location = new System.Drawing.Point(86, 94);
             this.textBoxTareaCorreoContacto.Name = "textBoxTareaCorreoContacto";
-            this.textBoxTareaCorreoContacto.Size = new System.Drawing.Size(291, 24);
+            this.textBoxTareaCorreoContacto.ReadOnly = true;
+            this.textBoxTareaCorreoContacto.Size = new System.Drawing.Size(275, 17);
             this.textBoxTareaCorreoContacto.TabIndex = 12;
-            this.textBoxTareaCorreoContacto.Text = "kbrowflotsky@organizacion.org";
             // 
             // labelTareaContactoCorreo
             // 
@@ -380,12 +383,13 @@
             // 
             // textBoxTareaTelContacto
             // 
+            this.textBoxTareaTelContacto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTareaTelContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTareaTelContacto.Location = new System.Drawing.Point(86, 71);
             this.textBoxTareaTelContacto.Name = "textBoxTareaTelContacto";
-            this.textBoxTareaTelContacto.Size = new System.Drawing.Size(291, 24);
+            this.textBoxTareaTelContacto.ReadOnly = true;
+            this.textBoxTareaTelContacto.Size = new System.Drawing.Size(275, 17);
             this.textBoxTareaTelContacto.TabIndex = 10;
-            this.textBoxTareaTelContacto.Text = "242242-24";
             // 
             // labelTareaTelContacto
             // 
@@ -399,12 +403,13 @@
             // 
             // textBoxTareaCargoContacto
             // 
+            this.textBoxTareaCargoContacto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTareaCargoContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTareaCargoContacto.Location = new System.Drawing.Point(86, 48);
             this.textBoxTareaCargoContacto.Name = "textBoxTareaCargoContacto";
-            this.textBoxTareaCargoContacto.Size = new System.Drawing.Size(291, 24);
+            this.textBoxTareaCargoContacto.ReadOnly = true;
+            this.textBoxTareaCargoContacto.Size = new System.Drawing.Size(275, 17);
             this.textBoxTareaCargoContacto.TabIndex = 8;
-            this.textBoxTareaCargoContacto.Text = "Segundo al mando";
             // 
             // labelTareaContactoCargo
             // 
@@ -418,12 +423,13 @@
             // 
             // textBoxTareaNombreContacto
             // 
+            this.textBoxTareaNombreContacto.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTareaNombreContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTareaNombreContacto.Location = new System.Drawing.Point(86, 25);
             this.textBoxTareaNombreContacto.Name = "textBoxTareaNombreContacto";
-            this.textBoxTareaNombreContacto.Size = new System.Drawing.Size(291, 24);
+            this.textBoxTareaNombreContacto.ReadOnly = true;
+            this.textBoxTareaNombreContacto.Size = new System.Drawing.Size(275, 17);
             this.textBoxTareaNombreContacto.TabIndex = 6;
-            this.textBoxTareaNombreContacto.Text = "Kyle Browflotsky";
             // 
             // labelTareaNombreContacto
             // 
@@ -434,6 +440,15 @@
             this.labelTareaNombreContacto.Size = new System.Drawing.Size(66, 18);
             this.labelTareaNombreContacto.TabIndex = 5;
             this.labelTareaNombreContacto.Text = "Nombre:";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(367, 24);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(27, 23);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "...";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // TareaControl
             // 
@@ -498,5 +513,6 @@
         private System.Windows.Forms.Label labelTareaContactoCargo;
         private System.Windows.Forms.TextBox textBoxTareaNombreContacto;
         private System.Windows.Forms.Label labelTareaNombreContacto;
+        private System.Windows.Forms.Button button1;
     }
 }

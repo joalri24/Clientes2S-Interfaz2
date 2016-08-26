@@ -39,6 +39,7 @@
             this.labelNombreContacto = new System.Windows.Forms.Label();
             this.buttonAceptar = new System.Windows.Forms.Button();
             this.buttonCancelar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBoxContacto.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,9 +64,9 @@
             // textBoxCorreo
             // 
             this.textBoxCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCorreo.Location = new System.Drawing.Point(82, 118);
+            this.textBoxCorreo.Location = new System.Drawing.Point(88, 118);
             this.textBoxCorreo.Name = "textBoxCorreo";
-            this.textBoxCorreo.Size = new System.Drawing.Size(280, 24);
+            this.textBoxCorreo.Size = new System.Drawing.Size(274, 24);
             this.textBoxCorreo.TabIndex = 4;
             // 
             // labelCorreo
@@ -81,9 +82,9 @@
             // textBoxTelefono
             // 
             this.textBoxTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTelefono.Location = new System.Drawing.Point(82, 89);
+            this.textBoxTelefono.Location = new System.Drawing.Point(88, 89);
             this.textBoxTelefono.Name = "textBoxTelefono";
-            this.textBoxTelefono.Size = new System.Drawing.Size(280, 24);
+            this.textBoxTelefono.Size = new System.Drawing.Size(274, 24);
             this.textBoxTelefono.TabIndex = 3;
             // 
             // labelTelefono
@@ -99,9 +100,9 @@
             // textBoxCargo
             // 
             this.textBoxCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCargo.Location = new System.Drawing.Point(82, 60);
+            this.textBoxCargo.Location = new System.Drawing.Point(88, 60);
             this.textBoxCargo.Name = "textBoxCargo";
-            this.textBoxCargo.Size = new System.Drawing.Size(280, 24);
+            this.textBoxCargo.Size = new System.Drawing.Size(274, 24);
             this.textBoxCargo.TabIndex = 2;
             // 
             // labelCargo
@@ -117,9 +118,9 @@
             // textBoxNombreContacto
             // 
             this.textBoxNombreContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNombreContacto.Location = new System.Drawing.Point(82, 30);
+            this.textBoxNombreContacto.Location = new System.Drawing.Point(88, 30);
             this.textBoxNombreContacto.Name = "textBoxNombreContacto";
-            this.textBoxNombreContacto.Size = new System.Drawing.Size(280, 24);
+            this.textBoxNombreContacto.Size = new System.Drawing.Size(274, 24);
             this.textBoxNombreContacto.TabIndex = 1;
             this.textBoxNombreContacto.TextChanged += new System.EventHandler(this.textBoxNombre_TextChanged);
             // 
@@ -129,9 +130,9 @@
             this.labelNombreContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNombreContacto.Location = new System.Drawing.Point(6, 33);
             this.labelNombreContacto.Name = "labelNombreContacto";
-            this.labelNombreContacto.Size = new System.Drawing.Size(66, 18);
+            this.labelNombreContacto.Size = new System.Drawing.Size(76, 18);
             this.labelNombreContacto.TabIndex = 2;
-            this.labelNombreContacto.Text = "Nombre:";
+            this.labelNombreContacto.Text = "Nombre: *";
             // 
             // buttonAceptar
             // 
@@ -154,11 +155,21 @@
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 182);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(101, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "*  Campo obligatorio";
+            // 
             // FormNuevoContacto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(392, 210);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonAceptar);
             this.Controls.Add(this.groupBoxContacto);
@@ -167,6 +178,7 @@
             this.groupBoxContacto.ResumeLayout(false);
             this.groupBoxContacto.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -183,5 +195,6 @@
         private System.Windows.Forms.Label labelNombreContacto;
         private System.Windows.Forms.Button buttonAceptar;
         private System.Windows.Forms.Button buttonCancelar;
+        private System.Windows.Forms.Label label1;
     }
 }

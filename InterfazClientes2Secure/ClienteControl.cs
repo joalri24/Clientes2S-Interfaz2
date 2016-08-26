@@ -57,6 +57,10 @@ namespace InterfazClientes2Secure
             cliente = null;
         }
 
+        /// <summary>
+        /// TODO
+        /// </summary>
+        /// <param name="clienteP"></param>
         public ClienteControl(Cliente clienteP)
         {
             InitializeComponent();
@@ -199,12 +203,17 @@ namespace InterfazClientes2Secure
         private void NuevaTarea(object sender, EventArgs e)
         {           
             TableLayoutPanel tablaFondo = tableLayoutTareas;
+
+            Tarea tarea = new Tarea();
+
             if (!hayTareas)
                 hayTareas = true;
             else
                 tablaFondo.RowCount++;
 
-            tablaFondo.Controls.Add(new TareaControl(), 0, tablaFondo.RowCount - 1);
+            TareaControl control = new TareaControl(tarea);
+            tablaFondo.Controls.Add(control, 0, tablaFondo.RowCount - 1);
+            control.EnfocarEnNombre();
         }
 
         /// <summary>

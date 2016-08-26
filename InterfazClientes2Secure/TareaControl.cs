@@ -31,12 +31,29 @@ namespace InterfazClientes2Secure
         // Atributos
         // ------------------------------------------------------------------
 
+        private Tarea tarea;
         // ------------------------------------------------------------------
         // Constructor
         // ------------------------------------------------------------------
         public TareaControl()
         {
             InitializeComponent();
+        }
+
+        /// <summary>
+        /// TODO
+        /// </summary>
+        public TareaControl(Tarea tareaP)
+        {
+            InitializeComponent();
+            tarea = tareaP;
+
+            toolStripLabelTarea.Text = tarea.Nombre;
+            textBoxTareaNombre.Text = tarea.Nombre;
+            toolStripLabelEstadoTarea.Text = tarea.Estado;
+            textBoxTareaEstado.Text = tarea.Estado;
+            textBoxDescripcion.Text = tarea.Descripcion;
+            dateTimePickerTareaFecha.Text = tarea.Fecha.ToString();
         }
 
         // ------------------------------------------------------------------
@@ -135,25 +152,13 @@ namespace InterfazClientes2Secure
         }
 
         /// <summary>
-        /// Cambia el estilo del borde cuando se hace click en el textbox.
-        /// Activa un borde 3d.
+        /// Hace que se enfoque el campo de texto del nombre de la tarea.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void TextBox_Enter(object sender, EventArgs e)
+        public void EnfocarEnNombre()
         {
-
+            textBoxTareaNombre.Select();
+            Console.WriteLine(textBoxTareaNombre.Text);
         }
 
-        /// <summary>
-        /// Cambia el estilo del borde cuando se le quita el foco al textbox.
-        /// Queda sin ningún borde.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void TextBox_Leave(object sender, EventArgs e)
-        {
-
-        }
     }
 }
