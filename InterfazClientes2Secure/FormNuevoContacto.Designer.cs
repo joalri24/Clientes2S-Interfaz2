@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNuevoContacto));
             this.groupBoxContacto = new System.Windows.Forms.GroupBox();
             this.textBoxCorreo = new System.Windows.Forms.TextBox();
             this.labelCorreo = new System.Windows.Forms.Label();
@@ -173,6 +174,7 @@
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonAceptar);
             this.Controls.Add(this.groupBoxContacto);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormNuevoContacto";
             this.Text = "2Secure - Agregar contacto";
             this.groupBoxContacto.ResumeLayout(false);

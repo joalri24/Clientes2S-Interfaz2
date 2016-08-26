@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNuevoCliente));
             this.groupBoxInfo = new System.Windows.Forms.GroupBox();
             this.radioButtonIntermediario = new System.Windows.Forms.RadioButton();
             this.radioButtonDirecto = new System.Windows.Forms.RadioButton();
@@ -261,6 +262,7 @@
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.groupBoxContacto);
             this.Controls.Add(this.groupBoxInfo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormNuevoCliente";
             this.Text = "2Secure Clientes - Añadir nuevo usuario";
             this.groupBoxInfo.ResumeLayout(false);
