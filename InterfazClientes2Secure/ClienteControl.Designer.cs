@@ -635,11 +635,11 @@
             this.tableLayoutContactos.ColumnCount = 1;
             this.tableLayoutContactos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutContactos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutContactos.Location = new System.Drawing.Point(27, 3);
+            this.tableLayoutContactos.Location = new System.Drawing.Point(35, 3);
             this.tableLayoutContactos.Name = "tableLayoutContactos";
             this.tableLayoutContactos.RowCount = 1;
             this.tableLayoutContactos.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutContactos.Size = new System.Drawing.Size(940, 403);
+            this.tableLayoutContactos.Size = new System.Drawing.Size(932, 403);
             this.tableLayoutContactos.TabIndex = 2;
             // 
             // toolStrip2
@@ -654,10 +654,9 @@
             this.toolStripButton4});
             this.toolStrip2.Location = new System.Drawing.Point(3, 3);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(24, 403);
+            this.toolStrip2.Size = new System.Drawing.Size(32, 403);
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
-            this.toolStrip2.Click += new System.EventHandler(this.NuevoContacto_Click);
             // 
             // toolStripButtonNuevoContacto
             // 
@@ -666,14 +665,15 @@
             this.toolStripButtonNuevoContacto.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonNuevoContacto.Image")));
             this.toolStripButtonNuevoContacto.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonNuevoContacto.Name = "toolStripButtonNuevoContacto";
-            this.toolStripButtonNuevoContacto.Size = new System.Drawing.Size(21, 23);
+            this.toolStripButtonNuevoContacto.Size = new System.Drawing.Size(29, 23);
             this.toolStripButtonNuevoContacto.Text = "+";
             this.toolStripButtonNuevoContacto.ToolTipText = "Añadir contacto";
+            this.toolStripButtonNuevoContacto.Click += new System.EventHandler(this.NuevoContacto_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(21, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(29, 6);
             // 
             // toolStripButton2
             // 
@@ -681,7 +681,7 @@
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(21, 20);
+            this.toolStripButton2.Size = new System.Drawing.Size(29, 20);
             this.toolStripButton2.Text = "toolStripButton2";
             // 
             // toolStripButton3
@@ -690,13 +690,13 @@
             this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(21, 20);
+            this.toolStripButton3.Size = new System.Drawing.Size(29, 20);
             this.toolStripButton3.Text = "toolStripButton3";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(21, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(29, 6);
             // 
             // toolStripButton4
             // 
@@ -704,7 +704,7 @@
             this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(21, 20);
+            this.toolStripButton4.Size = new System.Drawing.Size(29, 20);
             this.toolStripButton4.Text = "toolStripButton4";
             // 
             // ClienteControl

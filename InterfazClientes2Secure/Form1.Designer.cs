@@ -84,6 +84,7 @@
             this.newToolStripButton.Name = "newToolStripButton";
             this.newToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.newToolStripButton.Text = "&New";
+            this.newToolStripButton.ToolTipText = "Nuevo cliente";
             this.newToolStripButton.Click += new System.EventHandler(this.CrearCliente);
             // 
             // tableLayoutClientes
