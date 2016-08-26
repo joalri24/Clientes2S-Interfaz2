@@ -264,7 +264,7 @@
             this.Controls.Add(this.groupBoxInfo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormNuevoCliente";
-            this.Text = "2Secure Clientes - Añadir nuevo usuario";
+            this.Text = "2Secure Clientes - Añadir nuevo cliente";
             this.groupBoxInfo.ResumeLayout(false);
             this.groupBoxInfo.PerformLayout();
             this.groupBoxContacto.ResumeLayout(false);

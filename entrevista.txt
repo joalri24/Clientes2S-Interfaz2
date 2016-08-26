@@ -1,4 +1,4 @@
-2Secure clientes
+﻿2Secure clientes
 
 Manejar "muchos" clientes para que no se pierda la traza.
 LLamarlos a decirles ""hola coma vas?" y saber cuando llamó
@@ -54,6 +54,18 @@ Cliente:
   
   - Para empresa: Contacto principal?
   
+
+
+------------------
+
+
+- Lista de controles
+
+- minimizar todos
+- ordenar
+- Actualizar interfaz daca vez que se cambie de pestaña? (sincronización)
+
+-------------
   
   ////---///--///--///---///--
   
