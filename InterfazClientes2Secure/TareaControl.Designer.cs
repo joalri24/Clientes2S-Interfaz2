@@ -53,6 +53,7 @@
             this.dateTimePickerTareaFecha = new System.Windows.Forms.DateTimePicker();
             this.labelTareaFecha = new System.Windows.Forms.Label();
             this.groupBoxTareaContacto = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBoxTareaCorreoContacto = new System.Windows.Forms.TextBox();
             this.labelTareaContactoCorreo = new System.Windows.Forms.Label();
             this.textBoxTareaTelContacto = new System.Windows.Forms.TextBox();
@@ -61,7 +62,6 @@
             this.labelTareaContactoCargo = new System.Windows.Forms.Label();
             this.textBoxTareaNombreContacto = new System.Windows.Forms.TextBox();
             this.labelTareaNombreContacto = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.toolStripTarea.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerTarea)).BeginInit();
             this.splitContainerTarea.Panel1.SuspendLayout();
@@ -182,6 +182,7 @@
             this.toolStripButtonEliminarTarea.Name = "toolStripButtonEliminarTarea";
             this.toolStripButtonEliminarTarea.Size = new System.Drawing.Size(23, 22);
             this.toolStripButtonEliminarTarea.Text = "X";
+            this.toolStripButtonEliminarTarea.ToolTipText = "Eliminar tarea";
             this.toolStripButtonEliminarTarea.Click += new System.EventHandler(this.EliminarTarea);
             // 
             // toolStripButtonTareaEstado4
@@ -361,6 +362,15 @@
             this.groupBoxTareaContacto.TabStop = false;
             this.groupBoxTareaContacto.Text = "Contacto";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(367, 24);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(27, 23);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "...";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // textBoxTareaCorreoContacto
             // 
             this.textBoxTareaCorreoContacto.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -440,15 +450,6 @@
             this.labelTareaNombreContacto.Size = new System.Drawing.Size(66, 18);
             this.labelTareaNombreContacto.TabIndex = 5;
             this.labelTareaNombreContacto.Text = "Nombre:";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(367, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(27, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "...";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // TareaControl
             // 

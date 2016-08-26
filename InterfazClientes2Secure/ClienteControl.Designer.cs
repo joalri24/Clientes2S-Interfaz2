@@ -208,7 +208,7 @@
             this.toolStripButtonEliminar.Name = "toolStripButtonEliminar";
             this.toolStripButtonEliminar.Size = new System.Drawing.Size(23, 22);
             this.toolStripButtonEliminar.Text = "X";
-            this.toolStripButtonEliminar.ToolTipText = "Eliminar Client";
+            this.toolStripButtonEliminar.ToolTipText = "Eliminar cliente";
             this.toolStripButtonEliminar.Click += new System.EventHandler(this.EliminarCliente);
             // 
             // tabControlCliente
@@ -635,11 +635,11 @@
             this.tableLayoutContactos.ColumnCount = 1;
             this.tableLayoutContactos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutContactos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutContactos.Location = new System.Drawing.Point(35, 3);
+            this.tableLayoutContactos.Location = new System.Drawing.Point(27, 3);
             this.tableLayoutContactos.Name = "tableLayoutContactos";
             this.tableLayoutContactos.RowCount = 1;
             this.tableLayoutContactos.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutContactos.Size = new System.Drawing.Size(932, 403);
+            this.tableLayoutContactos.Size = new System.Drawing.Size(940, 403);
             this.tableLayoutContactos.TabIndex = 2;
             // 
             // toolStrip2
@@ -654,7 +654,7 @@
             this.toolStripButton4});
             this.toolStrip2.Location = new System.Drawing.Point(3, 3);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(32, 403);
+            this.toolStrip2.Size = new System.Drawing.Size(24, 403);
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
             // 

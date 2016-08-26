@@ -101,6 +101,7 @@
             this.toolStripButtonEliminarContacto.Name = "toolStripButtonEliminarContacto";
             this.toolStripButtonEliminarContacto.Size = new System.Drawing.Size(23, 22);
             this.toolStripButtonEliminarContacto.Text = "X";
+            this.toolStripButtonEliminarContacto.ToolTipText = "Eliminar contacto";
             this.toolStripButtonEliminarContacto.Click += new System.EventHandler(this.EliminarContacto);
             // 
             // splitContainerContacto
