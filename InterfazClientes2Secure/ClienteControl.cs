@@ -188,7 +188,7 @@ namespace InterfazClientes2Secure
         /// <param name="e"></param>
         private void EliminarCliente(object sender, EventArgs e)
         {
-            Form dialogoConfirmacion = new FormEliminar(cliente.Nombre);
+            Form dialogoConfirmacion = new FormEliminar("¿Está seguro que desea eliminar el cliente  \"" + cliente.Nombre + "\"?");
             if (dialogoConfirmacion.ShowDialog() == DialogResult.OK)
                 this.Dispose();
 

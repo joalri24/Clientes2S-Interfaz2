@@ -133,7 +133,7 @@ namespace InterfazClientes2Secure
         private void EliminarTarea(object sender, EventArgs e)
         {
             // TODO Reemplazar por el nombre de la tarea.
-            Form dialogoConfirmacion = new FormEliminar("Tarea");
+            Form dialogoConfirmacion = new FormEliminar("¿Está seguro que desea eleminar la tarea \"" + tarea.Nombre + "\"?");
             if (dialogoConfirmacion.ShowDialog() == DialogResult.OK)
                 this.Dispose();
         }

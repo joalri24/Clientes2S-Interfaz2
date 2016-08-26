@@ -31,10 +31,15 @@ namespace InterfazClientes2Secure
             InitializeComponent();
         }
 
-        public FormEliminar(string elemento)
+        /// <summary>
+        /// Construye el formulario de confirmación de eliminar un elemento.
+        /// Muestra el mensaje que se pasa como parámetro.
+        /// </summary>
+        /// <param name="mensaje"></param>
+        public FormEliminar(string mensaje)
         {
             InitializeComponent();
-            labelMensaje.Text = MENSAJE_BASE + elemento + "\"?";
+            labelMensaje.Text = mensaje;
 
         }
 

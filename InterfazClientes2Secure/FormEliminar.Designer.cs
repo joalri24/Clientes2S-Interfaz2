@@ -85,7 +85,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "FormEliminar";
-            this.Text = "2Secure - ¿Eliminar cliente?";
+            this.Text = "2Secure - Eliminar elemento";
             this.ResumeLayout(false);
             this.PerformLayout();
 

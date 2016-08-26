@@ -11,14 +11,15 @@ using System.Windows.Forms;
 namespace InterfazClientes2Secure
 {
     /// <summary>
-    /// Formulario que despliega un dialogo de entrada de información 
-    /// cuando se va a crear un nuevo cliente.
+    /// Formulario que despliega un dialogo de entrada de información cuando 
+    /// se va a crear un nuevo cliente. Selecciona por defecto el campo del nombre.
     /// </summary>
     public partial class FormNuevoCliente : Form
     {
         public FormNuevoCliente()
         {
             InitializeComponent();
+            textBoxNombreCliente.Select();
         }
 
         // ------------------------------------------------------------------

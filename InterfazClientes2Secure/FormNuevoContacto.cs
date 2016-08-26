@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace InterfazClientes2Secure
 {
+    /// <summary>
+    /// El formulati que aparece cuando se va a crear un nuevo contacto.
+    /// </summary>
     public partial class FormNuevoContacto : Form
     {
+        /// <summary>
+        /// Inicializa la clase. Selecciona por defecto el campo del nombre
+        /// del contacto.
+        /// </summary>
         public FormNuevoContacto()
         {
             InitializeComponent();
+            textBoxNombreContacto.Select();
         }
 
         // ------------------------------------------------------------------
